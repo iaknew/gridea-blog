@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mickey-yu12.github.io</id>
-    <title>余文凯</title>
-    <updated>2020-04-18T06:20:53.204Z</updated>
+    <title>老鼠小窝</title>
+    <updated>2020-04-18T06:23:12.715Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mickey-yu12.github.io"/>
     <link rel="self" href="https://mickey-yu12.github.io/atom.xml"/>
-    <subtitle>这里是余文凯的个人博客，记录自己的生活。</subtitle>
+    <subtitle>余文凯的小房子</subtitle>
     <logo>https://mickey-yu12.github.io/images/avatar.png</logo>
     <icon>https://mickey-yu12.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 余文凯</rights>
+    <rights>All rights reserved 2020, 老鼠小窝</rights>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>https://mickey-yu12.github.io/post/hello-world/</id>
