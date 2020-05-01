@@ -1,51 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
 <title>关于 | 老鼠小窝</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://mickey-yu12.github.io/media/css/mdui.min.css">
-<link rel="stylesheet" href="https://mickey-yu12.github.io/media/css/modify.css">
-<link rel="stylesheet" href="https://mickey-yu12.github.io/media/css/github-gist.min.css">
-<link rel="stylesheet" href="https://mickey-yu12.github.io/media/css/railscasts.min.css">
-</head>
-<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://mickey-yu12.github.io" class="mdui-typo-headline">老鼠小窝</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
-        </div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://mickey-yu12.github.io/favicon.ico?v=1588337316247">
+<link rel="stylesheet" href="https://mickey-yu12.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
+
+🏠 关于本站
+这个博客成立于2020年4月16日，是一个有趣的小站！本站记录自己的生活，也会有一些技术类博文。
+👨‍💻 博主是谁
+余文凯，浙江龙泉人，出生于2008年。
+是一个平凡的学生，正..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://mickey-yu12.github.io">
+        <img src="https://mickey-yu12.github.io/images/avatar.png?v=1588337316247" class="site-logo">
+        <h1 class="site-title">老鼠小窝</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-</header>
-
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="/archives" class="menu"><li class="mdui-list-item mdui-ripple">归档</li></a>
-        <a href="/tags" class="menu"><li class="mdui-list-item mdui-ripple">标签</li></a>
-        <a href="/post/about" class="menu"><li class="mdui-list-item mdui-ripple">关于</li></a>
+    <div>
+      
         
-        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
-    </ul>
-</nav>
-
-
-<main class="mdui-container mdui-typo mdui-m-t-2">
-    <section class="mdui-card">
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
         
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">关于</div>
-            <div class="mdui-card-primary-subtitle">发布于 2019-01-25 7:09:48，包含标签 。</div>
-        </div>
-        <div class="mdui-card-content"><blockquote>
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      余文凯的小房子
+    </div>
+    <div class="site-footer">
+      基于 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ，由 Github Pages 驱动 
+   若无特别声明，所有文字版权归余文凯所有。 | <a class="rss" href="https://mickey-yu12.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2019-01-25 7:09:48</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 </blockquote>
 <h2 id="关于本站">🏠 关于本站</h2>
@@ -58,66 +115,66 @@
 <h2 id="联系我呀">📬 联系我呀</h2>
 <p>Github：mickeyyu-12<br>
 微博：多余的余文凯</p>
-</div>
-        <div class="mdui-card-header">
-            <img class="mdui-card-header-avatar" src="https://mickey-yu12.github.io/images/avatar.png">
-            <div class="mdui-card-header-title">老鼠小窝</div>
-            <div class="mdui-card-header-subtitle">余文凯的小房子</div>
+
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-    </section>
+      </div>
+    </div>
 
-      
-            
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-<div id="gitalk-container"></div>
+AOS.init();
 
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '0c42b5a3ea25094b779f',
-    clientSecret: 'ed8ffb44fb61ca4dd69464fd6809a2581a30310d',
-    repo: '',
-    owner: '',
-    admin: [''],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-            
 
-            
-      
-</main>
 
-<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
-    
-    
-</nav>
 
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    基于 <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> ，由 Github Pages 驱动 
-   若无特别声明，所有文字版权归余文凯所有。
-</div>
 
-<script src="https://mickey-yu12.github.io/media/js/jquery.min.js"></script>
-<script src="https://mickey-yu12.github.io/media/js/mdui.min.js"></script>
-<script src="https://mickey-yu12.github.io/media/js/modify.js"></script>
-<script src="https://mickey-yu12.github.io/media/js/highlight.min.js"></script>
-<script src="https://mickey-yu12.github.io/media/js/lightense.min.js"></script>
-<script>
-// 初始化-高亮代码
-hljs.initHighlightingOnLoad();
-// 初始化-文章图片放大
-window.addEventListener('load', function () {
-    Lightense('#post .mdui-card-content img');
-}, false);
-</script>
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
 
-</body>
+      var gitalk = new Gitalk({
+        clientID: '0c42b5a3ea25094b779f',
+        clientSecret: 'ed8ffb44fb61ca4dd69464fd6809a2581a30310d',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
 </html>
