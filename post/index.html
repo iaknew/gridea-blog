@@ -1,134 +1,146 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>老鼠小窝</title>
-<link rel="shortcut icon" href="https://mickey-yu12.github.io/favicon.ico?v=1589099805419">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="余文凯的小房子">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://mickey-yu12.github.io/favicon.ico?v=1589099867330">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://mickey-yu12.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="老鼠小窝 - Atom Feed" href="https://mickey-yu12.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="余文凯的小房子" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://mickey-yu12.github.io">
-  <img class="avatar" src="https://mickey-yu12.github.io/images/avatar.png?v=1589099805419" alt="">
-  </a>
-  <h1 class="site-title">
-    老鼠小窝
-  </h1>
-  <p class="site-description">
-    余文凯的小房子
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://mickey-yu12.github.io/post" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-        <a href="https://github.com/mickey-yu12" target="_blank">
-          <i class="ri-github-line"></i>
-        </a>
-      
-    
-      
-    
-      
-        <a href="https://weibo.com/yuxiaokai5618" target="_blank">
-          <i class="ri-weibo-line"></i>
-        </a>
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://mickey-yu12.github.io">
+        <img class="avatar" src="https://mickey-yu12.github.io/images/avatar.png?v=1589099867330" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://mickey-yu12.github.io">
+        <h1 class="site-title">老鼠小窝</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
-    
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
         
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://mickey-yu12.github.io/post" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          
 
 <div class="archives-container">
   
     <h2 class="year">2020</h2>
     
       
-        <a href="https://mickey-yu12.github.io/post/markdown-test/" class="post">
-          <h2 class="post-title">
-            Markdown Test
-          </h2>
-          <div class="time">2020-05-10 10:49:15</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/markdown-test/">
+            <h2 class="post-title">
+              Markdown Test
+              <small>2020-05-10 10:49:15</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://mickey-yu12.github.io/post/hello-world/" class="post">
-          <h2 class="post-title">
-            Hello World
-          </h2>
-          <div class="time">2020-04-16 5:43:57</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/hello-world/">
+            <h2 class="post-title">
+              Hello World
+              <small>2020-04-16 5:43:57</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://mickey-yu12.github.io/post/du-fa-ming-jia-qi-qi-tu-you-gan/" class="post">
-          <h2 class="post-title">
-            读《发明家奇奇兔》有感
-          </h2>
-          <div class="time">2020-04-16 2:59:54</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/du-fa-ming-jia-qi-qi-tu-you-gan/">
+            <h2 class="post-title">
+              读《发明家奇奇兔》有感
+              <small>2020-04-16 2:59:54</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://mickey-yu12.github.io/post/kao-shi-qian-hou/" class="post">
-          <h2 class="post-title">
-            考试前后
-          </h2>
-          <div class="time">2020-04-16 2:59:03</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/kao-shi-qian-hou/">
+            <h2 class="post-title">
+              考试前后
+              <small>2020-04-16 2:59:03</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://mickey-yu12.github.io/post/zhen-zheng-de-you-yi/" class="post">
-          <h2 class="post-title">
-            真正的友谊——读《王尔德童话》之《忠实的朋友》有感
-          </h2>
-          <div class="time">2020-04-16 2:58:14</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/zhen-zheng-de-you-yi/">
+            <h2 class="post-title">
+              真正的友谊——读《王尔德童话》之《忠实的朋友》有感
+              <small>2020-04-16 2:58:14</small>
+            </h2>
+          </a>
+        </article>
       
     
       
-        <a href="https://mickey-yu12.github.io/post/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/" class="post">
-          <h2 class="post-title">
-            说“首创精神” ——读《红船领航》有感
-          </h2>
-          <div class="time">2020-04-16 2:54:18</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/">
+            <h2 class="post-title">
+              说“首创精神” ——读《红船领航》有感
+              <small>2020-04-16 2:54:18</small>
+            </h2>
+          </a>
+        </article>
       
     
       
@@ -149,32 +161,66 @@
       
     
       
-        <a href="https://mickey-yu12.github.io/post/hello-gridea/" class="post">
-          <h2 class="post-title">
-            Hello Gridea
-          </h2>
-          <div class="time">2018-12-12 12:00:00</div>
-        </a>
+        <article class="post">
+          <a href="https://mickey-yu12.github.io/post/hello-gridea/">
+            <h2 class="post-title">
+              Hello Gridea
+              <small>2018-12-12 12:00:00</small>
+            </h2>
+          </a>
+        </article>
       
     
   
 </div>
 
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan">余文凯的小房子</div>
+  <div class="social-container">
     
-        <div class="pagination-container">
-  
-  
+      
+        <a href="https://github.com/mickey-yu12/" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/yuxiaokai5618" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  版权所有©2020 余文凯 | Powered By <a href="https://gridea.dev"> Gridea</a> | <a class="rss" href="https://mickey-yu12.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-    
-        <div class="site-footer">
-  版权所有©2020 余文凯 | Powered By <a href="https://gridea.dev"> Gridea</a>
-  <a class="rss" href="https://mickey-yu12.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
 
       </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
     </div>
   </body>
 </html>
