@@ -1,113 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="zh-CN">
 
-<title>说“首创精神” ——读《红船领航》有感 | 余文凯的博客</title>
-
+<head>
+  <meta charset="UTF-8" />
+<title>说“首创精神” ——读《红船领航》有感 - 余文凯的博客</title>
+<meta name="description" content="一个学生的个人思想">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1593751582440">
-<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<link type='text/css' rel='stylesheet' href='https://iaknew.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script type="text/javascript" src='https://iaknew.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 
+<script >hljs.initHighlightingOnLoad();</script>
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+  <div class="layout">
+    <div class="layout-header">
 
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="layout-header-logo">
+				<a href="https://iaknew.github.io">
+					<img class="logo" src="https://iaknew.github.io/media/images/site_avatar.png?v=1593832181910" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a></li>
+			
+			<li class="layout-collapse-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a></li>
+			
+			<li class="layout-collapse-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a></li>
+			
+			<li class="layout-collapse-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a></li>
+			
 
-    <meta name="description" content="这个学期开学后，老师发给我们一本《红船领航》。
-这本书中的“红船精神”，是指“首创精神”、“奋斗精神”、“奉献精神”，是中国革命精神之源。这本书分成5章22个故事，其中，我最喜欢不怕丢“乌纱帽”的义乌县委书记谢高华的故事。20世纪80年代前..." />
-    <meta name="keywords" content="写作" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://iaknew.github.io">
-        <img src="https://iaknew.github.io/images/avatar.png?v=1593751582440" class="site-logo">
-        <h1 class="site-title">余文凯的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="https://iaknew.github.io" class="site-nav">
-            🏠 首页
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/about" class="site-nav">
-            😀 关于
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/archives" class="site-nav">
-            📄 归档
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/writing/" class="site-nav">
-            ✍️ 写作
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/thinking/" class="site-nav">
-            💡 随想
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/subscribe" class="site-nav">
-            👉 订阅
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      一个学生的个人思想
-    </div>
-    <div class="site-footer">
-      版权所有©2020 余文凯  | <a class="rss" href="https://iaknew.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+		</ul>
+	</div>
 </div>
 
+    <div class="layout-content">
+      <div class="layout-content-main">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">说“首创精神” ——读《红船领航》有感</h2>
-            <div class="post-date">2020年04月16日 2:54:18</div>
-            
-            <div class="post-content" v-pre>
-              <p>这个学期开学后，老师发给我们一本《红船领航》。<br>
+        <div class="container">
+          <div class="layout-post">
+            <div class="layout-post-body">
+              <div class="row">
+
+                <div class="col-md-12 col-lg-10">
+                  <div class="layout-post-main m-right m-md-right">
+                    <div class="layout-post-header">
+                      <h1 class="layout-post-title">说“首创精神” ——读《红船领航》有感</h1>
+                      <div class="layout-post-meta">
+                        <div class="layout-meta-list">
+                          <span>2020年04月16日 2:54:18</span>
+                        </div>
+                        <div class="layout-meta-list">
+                           <a href="https://iaknew.github.io/writing/" class="post--keyword"
+                            data-title="写作" data-type="post_tag" data-term-id="39">写作</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layout-post-content">
+                      <div class="layout-post-item">
+                        
+                        <p>这个学期开学后，老师发给我们一本《红船领航》。<br>
 这本书中的“红船精神”，是指“首创精神”、“奋斗精神”、“奉献精神”，是中国革命精神之源。这本书分成5章22个故事，其中，我最喜欢不怕丢“乌纱帽”的义乌县委书记谢高华的故事。20世纪80年代前，义乌还是个人多地少的贫困的地方。那时候农民只能靠“鸡毛换糖”来维持生计，而农民做买卖也被视作“投机倒把”，所以小商品的的交易只能悄悄地进行。谢高华上任后，总是能听见民众们“为什么不让老百姓摆地摊”的呼声。他想着要为他们做些什么。<br>
 1982年9月5日，第一代义乌小商品市场正式开放。谢高华还在当年的全县大会上承诺：“开放义乌小商品市场，出了问题我负责，我宁可不要‘乌纱帽’！”<br>
 现在，义乌小商品市场已经成为了全球最大的小商品集散中心。<br>
@@ -115,53 +121,101 @@
 我看完了这一本《红船领航》，心里有说不尽的感悟。我要树立正确的世界观、人生观以及价值观，把理想信念的火种、红色传统的基因一代代传下去。<br>
 二零一八年十一月二十五日</p>
 
+                      </div>
+                    </div>
+                    <div class="layout-post-social">
+                      <div class="layout-social-item">
+                        <div id="/post/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/" class="leancloud-visitors view"
+                          data-flag-title="说“首创精神” ——读《红船领航》有感">
+                          <span class="post-meta-item-text">阅读 </span>
+                          <span class="leancloud-visitors-count"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="layout-post-navigation">
+                      <div class="row">
+                        
+                        <div class="post-card col-6">
+                          <a href="https://iaknew.github.io/zhen-zheng-de-you-yi/" class="post-link">
+                            <div class="thumb" style="background-image: url('');"></div>
+                            <span class="btn-prev"><i class="fa fa-angle-left" aria-hidden='true'></i></span>
+                            <div class="thumb-mask"></div>
+                          </a>
+                        </div>
+                        <div class="post-card col-6">
+                          <a href="https://iaknew.github.io/hello-gridea/" class="post-link">
+                            <div class="thumb" style="background-image: url('https://iaknew.github.io/post-images/hello-gridea.png');"></div>
+                            <span class="btn-next"><i class="fa fa-angle-right" aria-hidden='true'></i></span>
+                            <div class="thumb-mask"></div>
+                          </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="layout-comments"></div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-2 d-none d-lg-block">
+                  <div class="layout-post-sidebar">
+                    <div class="layout-sidebar-item">
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://iaknew.github.io/writing/" class="tag">
-                    写作
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://iaknew.github.io/hello-gridea/">
-                  <h3 class="post-title">
-                    Hello Gridea
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-AOS.init();
+    	<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
 
-</script>
+				<div class="footer-copy">
+					
+					版权所有©2020 余文凯 
+				</div>
 
+			</div>
+		</div>
+	</div>
 
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.min.js'></script>
+	
 
+  </div>
+</body>
 
-
-
-  </body>
 </html>

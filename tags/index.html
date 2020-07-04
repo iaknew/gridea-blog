@@ -1,135 +1,177 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="zh-CN">
 
-<title>标签列表 | 余文凯的博客</title>
-
+<head>
+	<meta charset="UTF-8" />
+<title>余文凯的博客</title>
+<meta name="description" content="一个学生的个人思想">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1593751582440">
-<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<link type='text/css' rel='stylesheet' href='https://iaknew.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script type="text/javascript" src='https://iaknew.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 
+<script >hljs.initHighlightingOnLoad();</script>
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+	<div class="layout">
+		<div class="layout-header">
 
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="layout-header-logo">
+				<a href="https://iaknew.github.io">
+					<img class="logo" src="https://iaknew.github.io/media/images/site_avatar.png?v=1593832181910" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
+</div>
+		<div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a></li>
+			
+			<li class="layout-collapse-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a></li>
+			
+			<li class="layout-collapse-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a></li>
+			
+			<li class="layout-collapse-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a></li>
+			
 
-    <meta name="description" content="一个学生的个人思想">
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://iaknew.github.io">
-        <img src="https://iaknew.github.io/images/avatar.png?v=1593751582440" class="site-logo">
-        <h1 class="site-title">余文凯的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="https://iaknew.github.io" class="site-nav">
-            🏠 首页
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/about" class="site-nav">
-            😀 关于
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/archives" class="site-nav">
-            📄 归档
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/writing/" class="site-nav">
-            ✍️ 写作
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/thinking/" class="site-nav">
-            💡 随想
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/subscribe" class="site-nav">
-            👉 订阅
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      一个学生的个人思想
-    </div>
-    <div class="site-footer">
-      版权所有©2020 余文凯  | <a class="rss" href="https://iaknew.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+		</ul>
+	</div>
 </div>
 
+		<div class="layout-content">
+			<div class="layout-content-main">
+				<div class="container">
+					<div class="layout-links">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
-            
-              <a class="tag" href="https://iaknew.github.io/writing/">写作</a>
-            
-              <a class="tag" href="https://iaknew.github.io/vSALp3hkY/">Gridea</a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
+						<div class="layout-card">
+							<div class="layout-card-header">
+								<div class="layout-card-header-wrapper">
+									<div class="layout-card-header-title">标签云集</div>
+								</div>
+							</div>
+							<div class="layout-card-body">
+								<div class="layout-card-links">
+									<div class="layout-card-links-list row">
+										
+										<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+											<a class="layout-card-links-item" href="https://iaknew.github.io/writing/" title="写作">
+												<div class="layout-links-icon">
+													<i class="fa fa-tags" aria-hidden="true"></i>
+												</div>
+												<span>写作</span>
+											</a>
+										</div>
+										
+										<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+											<a class="layout-card-links-item" href="https://iaknew.github.io/vSALp3hkY/" title="Gridea">
+												<div class="layout-links-icon">
+													<i class="fa fa-tags" aria-hidden="true"></i>
+												</div>
+												<span>Gridea</span>
+											</a>
+										</div>
+										
+									</div>
+								</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+							</div>
 
-AOS.init();
+						</div>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
+			<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
 
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
 
+				<div class="footer-copy">
+					
+					版权所有©2020 余文凯 
+				</div>
 
-  </body>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.min.js'></script>
+	
+	</div>
+</body>
+
 </html>

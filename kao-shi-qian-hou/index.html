@@ -1,113 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
+<html lang="zh-CN">
 
-<title>考试前后 | 余文凯的博客</title>
-
+<head>
+  <meta charset="UTF-8" />
+<title>考试前后 - 余文凯的博客</title>
+<meta name="description" content="一个学生的个人思想">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1593751582440">
-<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<link type='text/css' rel='stylesheet' href='https://iaknew.github.io/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<script type="text/javascript" src='https://iaknew.github.io/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 
+<script >hljs.initHighlightingOnLoad();</script>
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+  <div class="layout">
+    <div class="layout-header">
 
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="layout-header-logo">
+				<a href="https://iaknew.github.io">
+					<img class="logo" src="https://iaknew.github.io/media/images/site_avatar.png?v=1593832181910" alt="">
+				</a>
+			</div>
+			<div class="layout-header-menu d-md-inline-block d-none">
+				<ul class="layout-navigation-list">
+					
+					<li class="layout-navigation-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a>
+					</li>
+					
+					<li class="layout-navigation-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="layout-header-item d-none">
+				<span class="layout-header-action layout-header-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</span>
+			</div>
+			
+			<div class="layout-header-nav d-md-none d-inline-block">
+				<div class="layout-header-trigger">
+					<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 
+</div>
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="🏠 首页" href="https://iaknew.github.io">🏠 首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="😀 关于" href="https://iaknew.github.io/about">😀 关于</a></li>
+			
+			<li class="layout-collapse-item"><a title="📄 归档" href="https://iaknew.github.io/archives">📄 归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="✍️ 写作" href="https://iaknew.github.io/writing/">✍️ 写作</a></li>
+			
+			<li class="layout-collapse-item"><a title="💡 随想" href="https://iaknew.github.io/thinking/">💡 随想</a></li>
+			
+			<li class="layout-collapse-item"><a title="👉 订阅" href="https://iaknew.github.io/subscribe">👉 订阅</a></li>
+			
 
-    <meta name="description" content="马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。
-马上就要期中考试了，全班同学都在复习课文、词语与生字，但马小虎却把语文书和家庭作业扔在一边，又玩起电脑来了。妈妈说：“小虎，你怎..." />
-    <meta name="keywords" content="写作" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://iaknew.github.io">
-        <img src="https://iaknew.github.io/images/avatar.png?v=1593751582440" class="site-logo">
-        <h1 class="site-title">余文凯的博客</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
-        
-          <a href="https://iaknew.github.io" class="site-nav">
-            🏠 首页
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/about" class="site-nav">
-            😀 关于
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/archives" class="site-nav">
-            📄 归档
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/writing/" class="site-nav">
-            ✍️ 写作
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/thinking/" class="site-nav">
-            💡 随想
-          </a>
-        
-      
-        
-          <a href="https://iaknew.github.io/subscribe" class="site-nav">
-            👉 订阅
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      一个学生的个人思想
-    </div>
-    <div class="site-footer">
-      版权所有©2020 余文凯  | <a class="rss" href="https://iaknew.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+		</ul>
+	</div>
 </div>
 
+    <div class="layout-content">
+      <div class="layout-content-main">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">考试前后</h2>
-            <div class="post-date">2020年04月16日 2:59:03</div>
-            
-            <div class="post-content" v-pre>
-              <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
+        <div class="container">
+          <div class="layout-post">
+            <div class="layout-post-body">
+              <div class="row">
+
+                <div class="col-md-12 col-lg-10">
+                  <div class="layout-post-main m-right m-md-right">
+                    <div class="layout-post-header">
+                      <h1 class="layout-post-title">考试前后</h1>
+                      <div class="layout-post-meta">
+                        <div class="layout-meta-list">
+                          <span>2020年04月16日 2:59:03</span>
+                        </div>
+                        <div class="layout-meta-list">
+                           <a href="https://iaknew.github.io/writing/" class="post--keyword"
+                            data-title="写作" data-type="post_tag" data-term-id="39">写作</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="layout-post-content">
+                      <div class="layout-post-item">
+                        
+                        <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
 <p>马上就要期中考试了，全班同学都在复习课文、词语与生字，但马小虎却把语文书和家庭作业扔在一边，又玩起电脑来了。妈妈说：“小虎，你怎么不写作业，又玩起电脑来了？”马小虎说：“没事，没事！等我打完这局就开始写作业！”<br>
 就这样，他每天不写作业，天天玩电脑，患上了严重近视，戴上了一副眼镜。这下可糟了。他的生活因为有了眼镜，带来了不方便，但是他还是不知道错误，继续玩着电脑，不写作业。如果你是他的老师，看他的作业本，就会看见——啊！他的作业本一片空白，连翻过的手指印也没有。</p>
 <p>光阴似箭，日月如梭。在不知不觉中，期中考试的那一天到了。马小虎看了试卷，立刻就傻眼了——按课文填空他不会，写词语也不会，甚至连作文都不会写。他只好到同桌那里去抄。可是他千躲万躲，还是躲不住监考老师的双眼。他只好胡乱写了几个字，把试卷交了上来。</p>
@@ -115,53 +121,101 @@
 他就像战败的战士一样，垂头丧气地回了家。爸爸问他：“这次考了多少分？”“只……只……考了……59……分，…….是全班……最……最后一名。”马小虎支支吾吾地回答。爸爸对他说：“儿子，好好学习，天天向上。下一次考试一定要认真，才能考出好成绩！”<br>
 马小虎决心改掉坏毛病，成为一名好学生！</p>
 
+                      </div>
+                    </div>
+                    <div class="layout-post-social">
+                      <div class="layout-social-item">
+                        <div id="/post/kao-shi-qian-hou/" class="leancloud-visitors view"
+                          data-flag-title="考试前后">
+                          <span class="post-meta-item-text">阅读 </span>
+                          <span class="leancloud-visitors-count"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="layout-post-navigation">
+                      <div class="row">
+                        
+                        <div class="post-card col-6">
+                          <a href="https://iaknew.github.io/du-fa-ming-jia-qi-qi-tu-you-gan/" class="post-link">
+                            <div class="thumb" style="background-image: url('');"></div>
+                            <span class="btn-prev"><i class="fa fa-angle-left" aria-hidden='true'></i></span>
+                            <div class="thumb-mask"></div>
+                          </a>
+                        </div>
+                        <div class="post-card col-6">
+                          <a href="https://iaknew.github.io/zhen-zheng-de-you-yi/" class="post-link">
+                            <div class="thumb" style="background-image: url('');"></div>
+                            <span class="btn-next"><i class="fa fa-angle-right" aria-hidden='true'></i></span>
+                            <div class="thumb-mask"></div>
+                          </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="layout-comments"></div>
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-2 d-none d-lg-block">
+                  <div class="layout-post-sidebar">
+                    <div class="layout-sidebar-item">
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://iaknew.github.io/writing/" class="tag">
-                    写作
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://iaknew.github.io/zhen-zheng-de-you-yi/">
-                  <h3 class="post-title">
-                    真正的友谊——读《王尔德童话》之《忠实的朋友》有感
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-AOS.init();
+    	<div class="layout-footer">
+		<div class="layout-footer-main">
+			<div class="container">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+				<div class="footer-links d-none d-md-block">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
 
-</script>
+				<div class="footer-copy">
+					
+					版权所有©2020 余文凯 
+				</div>
 
+			</div>
+		</div>
+	</div>
 
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/main.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.js'></script>
+	<script type="text/javascript" src='https://iaknew.github.io/media/scripts/swiper.min.js'></script>
+	
 
+  </div>
+</body>
 
-
-
-  </body>
 </html>
