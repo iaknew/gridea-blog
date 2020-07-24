@@ -1,530 +1,681 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="apple-touch-icon"
+  href="https://cdn.jsdelivr.net/gh/chiperman/Blog-photos/./img/iocn/aojep-i6dt9.49j3g5o9xbg.png">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<meta name="apple-mobile-web-app-title" content="XiaoX 博客">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
 <title>余文凯的博客</title>
-<meta name="description" content="一个学生的个人思想" />
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
-<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
 
-<script src="http://localhost:4000/media/js/jquery.min.js"></script>
-<script src="http://localhost:4000/media/js/masonry.pkgd.min.js"></script>
-<script src="http://localhost:4000/media/js/aos.js"></script>
-<script src="http://localhost:4000/media/js/pace.min.js"></script>
-<script src="http://localhost:4000/media/js/view-image.min.js"></script>
-<script src="http://localhost:4000/media/js/jquery.magnific-popup.min.js"></script>
-<script src="http://localhost:4000/media/js/functions.js"></script>
-  </head>
-  <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
-            <header id="header" class="grid-container">
-        <!-- start: .menu-wrapper -->
-        <div class="menu-mobile"> 
-          <i class="fa fa-reorder"></i>
-        </div>
-        <div class="menu-wrapper">
-          <div class="">
-            <div class="logo">
-              <a href="http://localhost:4000"><img src="\media\images\custom-headerLogo.png" alt=""></a>
-            </div>
-            <!-- start: .main-nav -->
+<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Sans+SC:300|Montserrat&display=swap"
+  rel="stylesheet">
+<link href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css" rel="stylesheet" />
+<!-- 下面是我自己的iconfont -->
+<link href="https://at.alicdn.com/t/font_1651848_9ur7s2zwgll.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://iaknew.github.io/media/scripts/script.js'></script>
+<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet" />
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+<script>
+  wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+  });
+  wow.init();
+</script>
 
-            <nav class="main-nav grid-container grid-parent">
-              <ul id="menu-header" class="menu gradient-effect">
-                <li class="current-menu-item"><a href="http://localhost:4000" class="menu">首页</a></li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000" class="menu">
-                      🏠 首页
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/about" class="menu">
-                      😀 关于
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/archives" class="menu">
-                      📜 归档
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/writing/" class="menu">
-                      ✒️ 写作
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/thinking/" class="menu">
-                      💡  随想
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/subscribe" class="menu">
-                      👉 订阅
-                    </a>
-                  </li>
-                
-                  <li class="" >
-                    <a href="http://localhost:4000/tags" class="menu">
-                      🔖 标签
-                    </a>
-                  </li>
-                
-                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
-              </ul>
-            </nav>
-            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
-            <!-- end: .main-nav -->
-            <div class="clear"></div>
-            <div class="border hide-on-tablet hide-on-mobile"></div>
-          </div>    
-          <div class="clear"></div>
-        </div>
-        <!-- end: .menu-wrapper -->
-        <div class="clear"></div>
-      </header>
-      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
-        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
-          <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1594455687933" action="/search/index.html" class="search-form" _lpchecked="1">
-              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
-              <button type="submit" class="submit" aria-label="Submit">
-                <i class="fa fa-search-line"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+</head>
 
-      <main id="home" class="main">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="row">
-          <div class="content-wrapper grid-posts content">
-                
-            <!-- start: .articles -->
-            
-              
-              
-              <div class="articles columns-3">
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                    <div class="meta">
-                      <time datetime="2020年05月10日 10:49:15"><i class="fa fa-calendar"></i><span class="lately">2 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/markdown-test/">Markdown Test</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/markdown-test/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/markdown-test/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/markdown-test/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                    <div class="meta">
-                      <time datetime="2020年04月16日 5:43:57"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/hello-world/">Hello World</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/hello-world/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/hello-world/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/hello-world/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                      <div class="tags absolute">
-                        <a href="http://localhost:4000/writing/" class="ctag ctag-2 ctag-writing">写作</a>
-                      </div>
-                    
-                    <div class="meta">
-                      <time datetime="2020年04月16日 2:59:54"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/du-fa-ming-jia-qi-qi-tu-you-gan/">读《发明家奇奇兔》有感</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/du-fa-ming-jia-qi-qi-tu-you-gan/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/du-fa-ming-jia-qi-qi-tu-you-gan/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/du-fa-ming-jia-qi-qi-tu-you-gan/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                      <div class="tags absolute">
-                        <a href="http://localhost:4000/writing/" class="ctag ctag-3 ctag-writing">写作</a>
-                      </div>
-                    
-                    <div class="meta">
-                      <time datetime="2020年04月16日 2:59:03"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/kao-shi-qian-hou/">考试前后</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/kao-shi-qian-hou/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/kao-shi-qian-hou/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/kao-shi-qian-hou/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                      <div class="tags absolute">
-                        <a href="http://localhost:4000/writing/" class="ctag ctag-4 ctag-writing">写作</a>
-                      </div>
-                    
-                    <div class="meta">
-                      <time datetime="2020年04月16日 2:58:14"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/zhen-zheng-de-you-yi/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/zhen-zheng-de-you-yi/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/zhen-zheng-de-you-yi/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/zhen-zheng-de-you-yi/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('/media/images/gridea.jpg');">
-                  <header>
-                    
-                      <div class="tags absolute">
-                        <a href="http://localhost:4000/writing/" class="ctag ctag-5 ctag-writing">写作</a>
-                      </div>
-                    
-                    <div class="meta">
-                      <time datetime="2020年04月16日 2:54:18"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
-                      <div class="clear"></div>
-                    </div>
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/">说“首创精神” ——读《红船领航》有感</a></h1>
-                  </header>
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="overlay"></div>       
-                </div>
-              </article>
-                
-              
-              
-              
-              
-                
-              <article class="default grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry">
-                <div class="article-wrapper">
-                  <header>
-                    <div class="post-format-image post-format-wrapper">
-                      <div class="featured-image">
-                        <a href="http://localhost:4000/hello-gridea/" class="thumb hover-effect">
-                          <span class="fullimage cover" role="img" aria-label="" style="background-image: url('http://localhost:4000/post-images/hello-gridea.png');"></span>
-                        </a>
-                        
-                        <div class="tags absolute">
-                          <a href="http://localhost:4000/vSALp3hkY/" class="ctag ctag-6 ctag-vSALp3hkY">Gridea</a>
-                        </div>
-                        
-                      </div>
-                    </div>                    
-                    <div class="meta">
-                      <time datetime="2018年12月12日 12:00:00"><i class="fa fa-calendar"></i><span class="lately">2 年前</span></time>
-                      <div class="clear"></div>
-                    </div>
+<body class="home blog">
+	<div id="wrapper">
+				<header id="header" class="site-header">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="https://iaknew.github.io" rel="home">余文凯的博客</a></h1>
+				<h2 class="site-description">一个学生的个人思想</h2>
 
-                    <h1 class="title main-title gradient-effect"><a href="http://localhost:4000/hello-gridea/">Hello Gridea</a></h1>
-                  </header>
+			</div>
+			<nav id="nav-wrapper">
+				<div class="container">
+					<div class="nav-toggle">
+						<div class="bars">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<ul class="dove">
+						
 
-                  <div class="post-excerpt">
-                      <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+						<li>
+
+							<a href="https://iaknew.github.io"> 🏠 首页</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/about"> 😀 关于</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/archives"> 📜 归档</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/writing/"> ✒️ 写作</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/thinking/"> 💡  随想</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/subscribe"> 👉 订阅</a></li>
+
+						
+
+						<li>
+
+							<a href="https://iaknew.github.io/tags"> 🔖 标签</a></li>
+
+						
+
+					</ul>
+					</li>
+
+					</ul>
+				</div>
+			</nav>
+
+			<div class="jingge">
+				
+				
+				<a href="https://mickey-yu12.github.io/atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a>
+				
+				
+				
+				
+				
+				<a href="https://github.com/mickey-yu12" target="_blank"><i class="iconfont icon-github"></i></a>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3498735386&amp;site=qq&amp;menu=yes" target="_blank"><i class="iconfont icon-qq"></i></a>
+				
+				
+				
+				<a href="https://weibo.com/yuxiaokai5618" target="_blank"><i class="iconfont icon-weibo"></i></a>
+				
+				
+				
+				
+			</div>
+			<form id="gridea-search-form" data-update="1595600679709" action="/search/index.html">
+				<div class="search-box">
+					<input class="search-txt" name="q" placeholder="Type to search" />
+					<a class="search-btn">
+						<i class="iconfont icon-search1" action="/search/index.html"></i>
+					</a>
+				</div>
+			</form>
+		</header>
+		<div id="content" class="container">
+			<div class="row">
+				<div class="col-md-8 site-main">
+					
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/markdown-test/" rel="bookmark">Markdown Test</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年05月10日 10:49:15
+			</time>
+			<span>
+				1 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/markdown-test/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/hello-world/" rel="bookmark">Hello World</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年04月16日 5:43:57
+			</time>
+			<span>
+				1 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/hello-world/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/du-fa-ming-jia-qi-qi-tu-you-gan/" rel="bookmark">读《发明家奇奇兔》有感</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年04月16日 2:59:54
+			</time>
+			<span>
+				2 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+			<a href="https://iaknew.github.io/writing/" class="post-tag">
+				# 写作
+			</a>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/du-fa-ming-jia-qi-qi-tu-you-gan/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/kao-shi-qian-hou/" rel="bookmark">考试前后</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年04月16日 2:59:03
+			</time>
+			<span>
+				2 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+			<a href="https://iaknew.github.io/writing/" class="post-tag">
+				# 写作
+			</a>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/kao-shi-qian-hou/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/zhen-zheng-de-you-yi/" rel="bookmark">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年04月16日 2:58:14
+			</time>
+			<span>
+				2 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+			<a href="https://iaknew.github.io/writing/" class="post-tag">
+				# 写作
+			</a>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/zhen-zheng-de-you-yi/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/" rel="bookmark">说“首创精神” ——读《红船领航》有感</a></h1>
+		<div class="entry-meta">
+			<time>
+				2020年04月16日 2:54:18
+			</time>
+			<span>
+				2 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+			<a href="https://iaknew.github.io/writing/" class="post-tag">
+				# 写作
+			</a>
+			
+		</div>
+		<div class="entry-summary jia">
+			
+			<p class="readmore">
+				<a href="https://iaknew.github.io/shuo-shou-chuang-jing-shen-du-hong-chuan-ling-hang-you-gan/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
+
+<article
+	class="wow zoomIn post post-index  post-318 type-post status-publish format-standard hentry category-uncategorized tag-40 tag-39">
+	
+	<a href="https://iaknew.github.io/hello-gridea/">
+		<div class="posttou" style="background-image:url(https://iaknew.github.io/post-images/hello-gridea.png)"></div>
+	</a>
+	
+	<div class="entry-content">
+		<h1 class="entry-title"><a href="https://iaknew.github.io/hello-gridea/" rel="bookmark">Hello Gridea</a></h1>
+		<div class="entry-meta">
+			<time>
+				2018年12月12日 12:00:00
+			</time>
+			<span>
+				2 min read
+			</span>
+			<span class="isTop">
+				<script type="text/javascript">
+					var isTop;
+					isTop = false;
+					if (isTop == true) {
+					  document.write("<span>⭐ Top</span>");
+					}
+				  </script>
+			</span>
+			<br>
+			
+			<a href="https://iaknew.github.io/vSALp3hkY/" class="post-tag">
+				# Gridea
+			</a>
+			
+		</div>
+		<div class="entry-summary jia">
+			<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-                    <div class="clear"></div>
-                  </div>
+			<p class="readmore">
+				<a href="https://iaknew.github.io/hello-gridea/" class="link-more">Read more</a>
+			</p>
+		</div>
+	</div>
+</article>
 
-                  <footer class="author-meta">
-                    <a href="" class="author" title="">
-                      <span class="author-image cover" style="background-image: url('http://localhost:4000/images/avatar.png');"></span>
-                      <span class="author-name">余文凯的博客</span>
-                    </a>
-                    
-                    <a href="http://localhost:4000/hello-gridea/#comments" class="comments meta-info alignright" title="">
-                      <span class="comment-count valine-comment-count" data-xid="/hello-gridea/"> </span><i class="fa fa-comment"></i>
-                    </a>
-                    <div id="/hello-gridea/" class="leancloud_visitors views-counter meta-info alignright" title=""><span class="leancloud-visitors-count" style="vertical-align: middle;"></span><i class="fa fa-leancloud"></i></div>
-                    
-                    <div class="clear"></div>
-                  </footer>
-                  <div class="border"></div>       
-                </div>
-              </article>
-                
-              
-              
-              <div class="clear"></div>
-              <div class="separator last hide-on-tablet hide-on-mobile"></div>
-            </div>
-            <!-- end: .articles -->
-            
-                        <div class="epcl-pagination section">
-              <div class="nav">
-                
-                
-              </div>
-            </div>
+				</div>
+			</div>
+			<nav class="navigation pagination" role="navigation">
+	
+			
+	</nav>	
+    	<script type="text/javascript">
+//点击加载更多
+jQuery(document).ready(function($) {
+    //点击下一页的链接(即那个a标签)
+    $(' .next').click(function() {
+        $this = $(this);
+        $this.addClass('loading').text('正在努力加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+        var href = $this.attr('href'); //获取下一页的链接地址
+        if (href != undefined) { //如果地址存在
+            $.ajax({ //发起ajax请求
+                url: href,
+                //请求的地址就是下一页的链接
+                type: 'get',
+                //请求类型是get
+                error: function(request) {
+                    //如果发生错误怎么处理
+                },
+                success: function(data) { //请求成功
+                    $this.removeClass('loading').text('点击查看更多'); //移除loading属性
+                    var $res = $(data).find('.post-318 '); //从数据中挑出文章数据，请根据实际情况更改
+                    $('.col-md-8').append($res.fadeIn(500)); //将数据加载加进posts-loop的标签中。
+                    var newhref = $(data).find(' .next').attr('href'); //找出新的下一页链接
+                    if (newhref != undefined) {
+                        $('.next').attr('href', newhref);
+                    } else {
+                        $('.next').remove(); //如果没有下一页了，隐藏
+                    }
+                }
+            });
+        }
+        return false;
+    });
+});
+</script>
+		</div>
+		<footer id="colophon" class="site-footer">
+	<div class="container">
+		<div class="copyright">
+			版权所有©2020 余文凯 
+			<b>Crafted with 💔 by <a href="https://chiperman.github.io/about/" target="_blank">chiperman</a></b>
+			<br>
+			<b>Eleven forever.</b>
+			<br>
+			<span class="runtime">
+				这个博客已经运行了<script type="text/javascript">
+					var urodz = new Date("04/16/2020");
+					var now = new Date();
+					var ile = now.getTime() - urodz.getTime();
+					var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+					document.write(+dni)
+				</script>天
+				<br>
+			</span>
+			<b>Theme: </b>
+			<a href="https://github.com/chiperman/gridea-theme-xiaox" target="_blank" title="Pan">
+				<span><b>Pan - XiaoX</b></span>
+			</a>
+			<b>. Powered by </b>
+			<a href="https://gridea.dev/" target="_blank" title="Gridea">
+				<span><b>Gridea</b></span>
+			</a>
+		</div>
+	</div><!-- .container -->
+</footer><!-- #colophon -->
+	</div>
+	<script src="https://cdn.bootcss.com/fitvids/1.2.0/jquery.fitvids.min.js"></script>
 
-            
-          </div>
-          </div>
-        </div>
-      </main>
+<script src="https://iaknew.github.io/media/scripts/marlin-scripts.js"></script>
 
-        <footer id="footer" class="grid-container">
-        <div class="widgets row gradient-effect">
-            <div class="default-sidebar border-effect">
-              <div class="grid-33 tablet-grid-50 mobile-grid-100">
-                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
-                  <h4 class="widget-title title white bordered">最新文章</h4>
-                  
-                  
-                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
-                    <a href="http://localhost:4000/resume/" class="thumb hover-effect">
-                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('/media/images/gridea.jpg');"></span>
-                    </a>
-                    <div class="info gradient-effect">
-                      <time datetime="2020年07月10日 3:57:46">2020年07月10日 3:57:46</time>
-                      <h4 class="title usmall">
-                        <a href="http://localhost:4000/resume/">简历</a>
-                      </h4>
-                    </div>
-                    <div class="clear"></div>
-                  </article>
-                  
-                  
-                  
-                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
-                    <a href="http://localhost:4000/subscribe/" class="thumb hover-effect">
-                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('/media/images/gridea.jpg');"></span>
-                    </a>
-                    <div class="info gradient-effect">
-                      <time datetime="2020年06月12日 9:32:52">2020年06月12日 9:32:52</time>
-                      <h4 class="title usmall">
-                        <a href="http://localhost:4000/subscribe/">订阅</a>
-                      </h4>
-                    </div>
-                    <div class="clear"></div>
-                  </article>
-                  
-                  
-                  
-                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
-                    <a href="http://localhost:4000/markdown-test/" class="thumb hover-effect">
-                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('/media/images/gridea.jpg');"></span>
-                    </a>
-                    <div class="info gradient-effect">
-                      <time datetime="2020年05月10日 10:49:15">2020年05月10日 10:49:15</time>
-                      <h4 class="title usmall">
-                        <a href="http://localhost:4000/markdown-test/">Markdown Test</a>
-                      </h4>
-                    </div>
-                    <div class="clear"></div>
-                  </article>
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <div class="clear"></div>
-                </section>
-              </div>
+<script src="//tokinx.github.io/lately/lately.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    $.lately({
+      'target': '.lately-a,.lately-b,.lately-c'
+    })
+  });
+</script>
+<style type="text/css">
+  /* 一键到顶部 */
+  a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+  }
 
-              <div class="grid-33 tablet-grid-50 mobile-grid-100">
-                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
-                  <h4 class="widget-title title white bordered">标签云</h4>
-                  <div class="tagcloud">
-                    
-                      <a href="http://localhost:4000/writing/" class="ctag ctag-0 ctag-writing" aria-label="">写作</a>
-                    
-                      <a href="http://localhost:4000/vSALp3hkY/" class="ctag ctag-1 ctag-vSALp3hkY" aria-label="">Gridea</a>
-                    
-                  </div>
-                  <div class="clear"></div>
-                </section>
-              </div>
+  a.back_to_top span {
+    color: #888;
+  }
 
-              <div class="grid-33 tablet-grid-50 mobile-grid-100">
-                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
-                  <h4 class="widget-title title white bordered">关于我</h4>
-                  <div class="avatar">
-                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(http://localhost:4000/images/avatar.png);"></span></a>
-                  </div>
-                  <div class="info">
-                    <h4 class="title small author-name gradient-effect no-margin"><a href="">余文凯的博客</a></h4>
-                    <p class="founder">一个学生的个人思想</p>
-                    <div class="social">
-                      
-                          
-                            <a href="github.com/mickey-yu12" class="translate-effect" target="_blank"><i class="fa fa-github"></i></a>
-                        
-                      
-                        
-                      
-                        
-                      
-                        
-                      
-                        
-                      
-                    </div> 
-                  </div>
-                  <div class="clear"></div>
-                  </section>
-              </div>
+  a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+  }
 
-            </div>
-            <div class="clear"></div>
-        </div>
+  a.back_to_top:hover span {
+    color: #555;
+  }
 
-        <div class="logo">
-          <a href="http://localhost:4000"><img src="\media\images\custom-footerLogo.png" alt=""></a>
-        </div>
-        <p class="published border-effect">
-          ©2019 共 10 篇文章
-          <br/>
-          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
-        </p>
-        
-        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
-          <i class="fa fa-arrow"></i>
-        </a>
-    </footer>
-    
-    <div class="clear"></div>
+  @media print,
+  screen and (max-width: 580px) {
+    .back_to_top {
+      display: none !important;
+    }
+  }
 
-        
+  /* 一键到底部 */
 
-    </div>
-    <!-- end: #wrapper -->
-  </body>
+  a.down_to_bottom {
+    text-decoration: none;
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+  }
+
+  a.down_to_bottom span {
+    color: #888;
+  }
+
+  a.down_to_bottom:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+  }
+
+  a.down_to_bottom:hover span {
+    color: #555;
+  }
+
+  @media print,
+  screen and (max-width: 580px) {
+    .down_to_bottom {
+      display: none !important;
+    }
+  }
+</style>
+
+
+<a id="back_to_top" href="#" class="back_to_top"><span><i class="iconfont icon-xiangshang"></i></span>
+</a>
+
+<a id="down_to_bottom" href="#" class="down_to_bottom"><span><i class="iconfont icon-xiangxia"></i></span>
+</a>
+
+<script src="//instant.page/3.0.0" type="module" defer
+  integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<script>
+  function getScrollTop() {
+    var scrollTop = 0,
+      bodyScrollTop = 0,
+      documentScrollTop = 0;
+    if (document.body) {
+      bodyScrollTop = document.body.scrollTop;
+    }
+    if (document.documentElement) {
+      documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+    return scrollTop;
+  };
+
+  function getScrollHeight() {
+    var scrollHeight = 0,
+      bodyScrollHeight = 0,
+      documentScrollHeight = 0;
+    if (document.body) {
+      bSH = document.body.scrollHeight;
+    }
+    if (document.documentElement) {
+      dSH = document.documentElement.scrollHeight;
+    }
+    scrollHeight = (bSH - dSH > 0) ? bSH : dSH;
+    return scrollHeight;
+  };
+
+  function getWindowHeight() {
+    var windowHeight = 0;
+    if (document.compatMode == "CSS1Compat") {
+      windowHeight = document.documentElement.clientHeight;
+    } else {
+      windowHeight = document.body.clientHeight;
+    }
+    return windowHeight;
+  };
+
+  $(document).ready((function (_this) {
+    return function () {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function () {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block');
+          } else {
+            return bt.css('display', 'none');
+          }
+        });
+        return bt.click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      }
+    };
+  })(this));
+
+  $(document).ready((function (_this) {
+    return function () {
+      var bt;
+      bt = $('#down_to_bottom');
+      if ($(document).width() > 480) {
+        $(window).scroll(function () {
+          var st;
+          st = $(window).scrollTop();
+          if (getScrollTop() + getWindowHeight() == getScrollHeight()) {
+            return bt.css('display', 'none');
+          } else {
+            return bt.css('display', 'block');
+          }
+        });
+        return bt.click(function () {
+          $('body,html').animate({
+            scrollTop: $('body,html')[0].scrollHeight
+          }, 800);
+          return false;
+        });
+      }
+    };
+  })(this));
+</script>
+</body>
+
 </html>
