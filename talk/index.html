@@ -34,67 +34,89 @@
 <body>
     <div id=side>
         <div class="avatar-border">
-            <img src="https://iaknew.github.io/images/avatar.png?v=1593671728103" class="avatar">
+            <img src="https://iaknew.github.io/images/avatar.png?v=1595839364099" class="avatar">
         </div>
         <div class="sitename">余文凯的博客</div>
         <span class="describtion" data-text='["一个学生的个人思想"]'>&nbsp;</span>
         
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="搜索">
+            <div class="search-results"></div>
+        </div>
+        
     <div class="share-button">
         <span>社交按钮</span>
         
+        <a href="https://github.com/iaknew" target="_blank"><i><img class="icon"
+                    src="https://iaknew.github.io/media/images/github.png" alt=""></i></a>
         
         
+        <a onclick="showqq()"><i><img class="icon" src="https://iaknew.github.io/media/images/QQ.png" alt=""></i></a>
+        
+        
+        
+        <a href="https://space.bilibili.com/15583933" target="_blank"><i><img class="icon"
+                    src="https://iaknew.github.io/media/images/bilibili.png" alt=""></i></a>
         
         
         
     </div>
-    <div id="qq" style="display:none"></div>
+    <div id="qq" style="display:none">2050997731</div>
     
     
     <div class="mchocie describtion">
-        <a href="https://wkyucode.github.io" class="menubutton">
-            🏠首页
+        <a href="https://iaknew.github.io" class="menubutton">
+            🏠 首页
         </a>
     </div>
     
     
     
     <div class="mchocie describtion">
-        <a href="https://wkyucode.github.io/about" class="menubutton">
-            😀关于
+        <a href="https://iaknew.github.io/about" class="menubutton">
+            😀 关于
         </a>
     </div>
     
     
     
     <div class="mchocie describtion">
-        <a href="https://wkyucode.github.io/archives" class="menubutton">
-            📄归档
+        <a href="https://iaknew.github.io/archives" class="menubutton">
+            📜 归档
         </a>
     </div>
     
     
     
     <div class="mchocie describtion">
-        <a href="https://mickey-yu12.github.io/writing/" class="menubutton">
-            ✍️写作
+        <a href="https://iaknew.github.io/subscribe" class="menubutton">
+            👉 订阅
         </a>
     </div>
     
     
     
     <div class="mchocie describtion">
-        <a href="https://mickey-yu12.github.io/thinking/" class="menubutton">
-            💡随想
+        <a href="https://iaknew.github.io/tags" class="menubutton">
+            🔖 标签
         </a>
     </div>
     
     
     
+        <div class="mchocie describtion">
+            <a href="https://iaknew.github.io/talk" class="menubutton">说说</a>
+        </div>
+        
     
     <hr>
     <div id="footinfo">版权所有©2020 余文凯  | Theme: <a
         href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
+    
+    <div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div>
+    <div id="cussitetime" style="display:none">02/02/2020</div>
     
     
     </div>
@@ -102,6 +124,37 @@
 
 </html>
 <script src="https://iaknew.github.io/media/js/wordshow.js"></script>
+
+<script>
+    //----------------------站点运行时间
+    var now = new Date();
+
+    function createtime() {
+        var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
+        var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+        document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
 
 <script>
     //-------------------------------------------------搜索
@@ -260,45 +313,47 @@
           
           
           <li>
-            <a href="https://wkyucode.github.io">
-              🏠首页
+            <a href="https://iaknew.github.io">
+              🏠 首页
             </a>
           </li>
           
           
           
           <li>
-            <a href="https://wkyucode.github.io/about">
-              😀关于
+            <a href="https://iaknew.github.io/about">
+              😀 关于
             </a>
           </li>
           
           
           
           <li>
-            <a href="https://wkyucode.github.io/archives">
-              📄归档
+            <a href="https://iaknew.github.io/archives">
+              📜 归档
             </a>
           </li>
           
           
           
           <li>
-            <a href="https://mickey-yu12.github.io/writing/">
-              ✍️写作
+            <a href="https://iaknew.github.io/subscribe">
+              👉 订阅
             </a>
           </li>
           
           
           
           <li>
-            <a href="https://mickey-yu12.github.io/thinking/">
-              💡随想
+            <a href="https://iaknew.github.io/tags">
+              🔖 标签
             </a>
           </li>
           
           
           
+            <li><a href="https://iaknew.github.io/talk">说说</a></li>
+            
           
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -438,7 +493,7 @@
     add();
 
     function get() {
-        var t = JSON.parse('');
+        var t = JSON.parse('[{"author":"余文凯","img":"","text":"哦耶，换主题啦！","time":"2020.7.2 14:40"}]');
         talkindex = t.length - 1;
         for (var i = t.length - 1; i >= 0; i--) {
             var d = {};
@@ -469,7 +524,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://iaknew.github.io/images/avatar.png?v=1593671728103">\
+                        <img class="intro1" src="https://iaknew.github.io/images/avatar.png?v=1595839364099">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
