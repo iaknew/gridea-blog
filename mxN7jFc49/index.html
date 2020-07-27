@@ -1,18 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<style>
-    a {
-        text-decoration: none;
-    }
-</style>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/live2d.css">
-<title>标签-余文凯的博客</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="暑假里，我读了《王尔德童话》这本书。其中，《忠实的朋友》这一篇童话让我有了很大的感触。
+它通过水老鼠、朱顶雀和鸭妈妈的对话讲述了年轻人小汉斯和磨坊主休之间的关于“友谊”的故事。休自称是汉斯的朋友，并不断以朋友的名义逼汉斯替他做各种苦活，还从..." />
+    <meta name="keywords" content="写作" />
+    <link rel="stylesheet" href="https://iaknew.github.io/media/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+              
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://iaknew.github.io/media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <title>余文凯的博客</title>
+</head>
 
 <body>
     <!-- 响应式布局，针对PC端内容显示 -->
@@ -296,146 +299,132 @@
             alert("博主暂未设置QQ联系方式");
     }
 </script></div>
-                <div id="main" class="col-xs-12 col-sm-7">
-                    <style>
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-
-        /*��ʼ״̬ ͸����Ϊ0*/
-        40% {
-            opacity: 0;
-        }
-
-        /*����״̬ ͸����Ϊ0*/
-        100% {
-            opacity: 1;
-        }
-
-        /*����״̬ ͸����Ϊ1*/
-    }
-
-    @-webkit-keyframes fade-in {
-
-        /*���webkit�ں�*/
-        0% {
-            opacity: 0;
-        }
-
-        40% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .postimage {
-        width: 100%;
-    }
-
-    .tag-container {
-        min-height: 100vh;
-        animation: fade-in;
-        /*��������*/
-        animation-duration: 1s;
-        /*��������ʱ��*/
-        -webkit-animation: fade-in 1s;
-        /*���webkit�ں�*/
-    }
-
-    @media screen and (max-width:1300px) {
-        .tag-container {
-            margin-top: 100px;
-            animation: fade-in;
-            /*��������*/
-            animation-duration: 1s;
-            /*��������ʱ��*/
-            -webkit-animation: fade-in 1s;
-            /*���webkit�ں�*/
-        }
-    }
-</style>
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/font-awesome.css">
-<div class="tag-container">
-    
-    <div class="postshow">
-        
-        <div id="post" style="width:100%">
-            <img src="https://iaknew.github.io/post-images/hello-gridea.png" class="postimage"
-                onclick="window.location.href= 'https://iaknew.github.io/hello-gridea/';return false">
-            <div class="posttitlebox">
-                <div class="posttitle" onclick="window.location.href= 'https://iaknew.github.io/hello-gridea/';return false">
-                    Hello Gridea
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
                 </div>
+                <div id="main" class="col-xs-12 col-sm-7">
+                    <link rel="stylesheet" href="https://iaknew.github.io/media/css/font-awesome.css">
+<style>
+
+</style>
+
+<body>
+    <div class="allcontent">
+        <div class="postshow">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
+                
+                <img src="\media\images\custom-postdefaultimage.png" class="postimage">
+                
             </div>
-        </div>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2018年12月12日 12:00:00</div>
+            <div class="postinfo">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020年04月16日 2:58:14</div>
             <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
             <div class="posttag">
                 
-                <a href="https://iaknew.github.io/vSALp3hkY/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
+                <a href="https://iaknew.github.io/writing/" class="postlink">
+                    <i class="fa fa-tag"></i> 写作
                 </a>
                 
             </div>
         </div>
         
-</div>
+        <div id="texttitle" style="text-align: center">
+            <h2>真正的友谊——读《王尔德童话》之《忠实的朋友》有感</h2>
+            <!-- id 将作为查询条件 -->
+            <div id="pl" style="display:none">https://iaknew.github.io/mxN7jFc49/</div>
+            <div id="rootaddr" style="display:none">https://iaknew.github.io</div>
+            <span id="hotnum" class="leancloud_visitors" data-flag-title="真正的友谊——读《王尔德童话》之《忠实的朋友》有感">
+                <h4 class="readercount">热度🔥: <i class="leancloud-visitors-count">loading...</i></h4>
+            </span>
+        </div>
+        <div class="text ">
+            <p>暑假里，我读了《王尔德童话》这本书。其中，《忠实的朋友》这一篇童话让我有了很大的感触。<br>
+它通过水老鼠、朱顶雀和鸭妈妈的对话讲述了年轻人小汉斯和磨坊主休之间的关于“友谊”的故事。休自称是汉斯的朋友，并不断以朋友的名义逼汉斯替他做各种苦活，还从汉斯手里无偿拿走自己需要的东西——当然也是以朋友的名义。小汉斯为了保持与休的“友情”，不断地满足修的无理要求，最终献上了自己宝贵的生命。<br>
+读完这个故事，我认为休和汉斯都是很可悲的人，他们对友谊都有着可悲的理解。<br>
+休，无疑是聪明的。可是，说他聪明还不如说他像老狐狸一样狡猾奸诈。除此之外，他还是个伪善，自私，贪婪的伪君子。他对待朋友就像对待奴隶一样，只有折磨和索取。当汉斯为了他死去，人们为他举办葬礼时，休并没有内疚和后悔，还说：“这年头，人们都得为自己的慷慨大方而遭受惩罚。”试想，如果人们听到这话，一定不会有人愿意跟他做朋友。<br>
+汉斯，虽然勤劳，大方，但却是一个愚昧的人。当别人不断地提出无理的要求时，他不懂得分辨是非，不懂得保护自己的正当权益，只是一味地配合。最后，失去了生命，失去了一切。<br>
+真正的朋友要互相信任，互相帮助，有困难一起面对，有快乐一起分享。不能像休那样自私，更不能像汉斯那样无知。</p>
 
-</div>
-                    <div>
-                        <div class="pagi">
-    <ul>
+        </div>
         
-        <li><a style="width:100px">&nbsp;</a></li>
+        <div class="prev-post">
+            上一篇
+            <a href="https://iaknew.github.io/S-gmF2W3p/">
+                考试前后
+            </a>
+        </div>
         
-                <li><a id="page1">1</a></li>
-                <li><a id="page2" class="active">2</a></li>
-                <li><a id="page3">3</a></li>
-                
-        <li><a style="width:100px">&nbsp;</a></li>
         
-            </ul>
-</div>
-
-<div id="pagination-prev" style="display:none"> 
-</div>
-<div id="pagination-next" style="display:none"> </div>
-
-
+        <div class="next-post">
+            下一篇
+            <a href="https://iaknew.github.io/_y4tcozXc/">
+                说“首创精神” ——读《红船领航》有感
+            </a>
+        </div>
+        
+    </div>
+    </div>
+</body>
 <script>
-    var prevstr = document.getElementById("pagination-prev").innerHTML;
-    var nextstr = document.getElementById("pagination-next").innerHTML;
-    var page1 = document.getElementById("page1");
-    var page2 = document.getElementById("page2");
-    var page3 = document.getElementById("page3");
-    page1.innerHTML = '-';
-    page2.innerHTML = '1';
-    page3.innerHTML = '-';
-    if (prevstr.length > 5) {
-        if (prevstr.indexOf("page/") != -1) {
-            var prevnum = parseInt(prevstr.split("page/")[1]);
-            page1.innerHTML = prevnum;
-            page2.innerHTML = prevnum + 1;
+    var t_img; // 定时�?
+    var isLoad = true; // 控制变量
+    isImgLoad(function () {
+        // 加载完成
+        $('.postdetailimg').css("display", "block");
+    });
+    // 判断图片加载的函�?
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我�?需要�?�理cover。其它图片可以不管�?
+        // 查找所有封面图，迭代�?�理
+        $('.postdetailimg').each(function () {
+            // 找到�?0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完�?
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时�?
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
         } else {
-            page1.innerHTML = 1;
-            page2.innerHTML = 2;
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归�?�?
+            }, 500); // 我这里�?�置的是500�?秒就�?描一次，�?以自己调�?
         }
     }
-    if (nextstr.indexOf("page/") != -1) {
-        var nextnum = parseInt(nextstr.split("page/")[1]);
-        page3.innerHTML = nextnum;
-        page2.innerHTML = nextnum - 1;
-    }
+
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
 </script>
-                        <div style="padding-bottom:10%"></div>
+                    <div name="comment" style="background: white">
+                        <div class="commentcontainer">
+                            
+                            <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                            
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-2"></div>
+                <div class="toc-container">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="toggleContainer">
+            <div class="toggle">
+                <i class="fas fa-angle-double-up"></i>
             </div>
         </div>
         <div id="bg">
@@ -445,8 +434,6 @@
         <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
            
     </div>
-
-
     <!-- 响应式布局，针对手机端内容显示 -->
     <div class="nav-small">
         <head>
@@ -532,100 +519,114 @@
   <!-- 引入BootStrap核心js文件 -->
   <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-        <div style="margin-top:50px"></div>
-        <style>
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
+        <div style="margin-top:30px"></div>
+        <link rel="stylesheet" href="https://iaknew.github.io/media/css/font-awesome.css">
+<style>
 
-        /*��ʼ״̬ ͸����Ϊ0*/
-        40% {
-            opacity: 0;
-        }
-
-        /*����״̬ ͸����Ϊ0*/
-        100% {
-            opacity: 1;
-        }
-
-        /*����״̬ ͸����Ϊ1*/
-    }
-
-    @-webkit-keyframes fade-in {
-
-        /*���webkit�ں�*/
-        0% {
-            opacity: 0;
-        }
-
-        40% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .postimage {
-        width: 100%;
-    }
-
-    .tag-container {
-        min-height: 100vh;
-        animation: fade-in;
-        /*��������*/
-        animation-duration: 1s;
-        /*��������ʱ��*/
-        -webkit-animation: fade-in 1s;
-        /*���webkit�ں�*/
-    }
-
-    @media screen and (max-width:1300px) {
-        .tag-container {
-            margin-top: 100px;
-            animation: fade-in;
-            /*��������*/
-            animation-duration: 1s;
-            /*��������ʱ��*/
-            -webkit-animation: fade-in 1s;
-            /*���webkit�ں�*/
-        }
-    }
 </style>
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/font-awesome.css">
-<div class="tag-container">
-    
-    <div class="postshow">
-        
-        <div id="post" style="width:100%">
-            <img src="https://iaknew.github.io/post-images/hello-gridea.png" class="postimage"
-                onclick="window.location.href= 'https://iaknew.github.io/hello-gridea/';return false">
-            <div class="posttitlebox">
-                <div class="posttitle" onclick="window.location.href= 'https://iaknew.github.io/hello-gridea/';return false">
-                    Hello Gridea
-                </div>
+
+<body>
+    <div class="allcontent">
+        <div class="postshow">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
+                
+                <img src="\media\images\custom-postdefaultimage.png" class="postimage">
+                
             </div>
-        </div>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2018年12月12日 12:00:00</div>
+            <div class="postinfo">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020年04月16日 2:58:14</div>
             <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
             <div class="posttag">
                 
-                <a href="https://iaknew.github.io/vSALp3hkY/" class="postlink">
-                    <i class="fa fa-tag"></i> Gridea
+                <a href="https://iaknew.github.io/writing/" class="postlink">
+                    <i class="fa fa-tag"></i> 写作
                 </a>
                 
             </div>
         </div>
         
-</div>
+        <div id="texttitle" style="text-align: center">
+            <h2>真正的友谊——读《王尔德童话》之《忠实的朋友》有感</h2>
+            <!-- id 将作为查询条件 -->
+            <div id="pl" style="display:none">https://iaknew.github.io/mxN7jFc49/</div>
+            <div id="rootaddr" style="display:none">https://iaknew.github.io</div>
+            <span id="hotnum" class="leancloud_visitors" data-flag-title="真正的友谊——读《王尔德童话》之《忠实的朋友》有感">
+                <h4 class="readercount">热度🔥: <i class="leancloud-visitors-count">loading...</i></h4>
+            </span>
+        </div>
+        <div class="text ">
+            <p>暑假里，我读了《王尔德童话》这本书。其中，《忠实的朋友》这一篇童话让我有了很大的感触。<br>
+它通过水老鼠、朱顶雀和鸭妈妈的对话讲述了年轻人小汉斯和磨坊主休之间的关于“友谊”的故事。休自称是汉斯的朋友，并不断以朋友的名义逼汉斯替他做各种苦活，还从汉斯手里无偿拿走自己需要的东西——当然也是以朋友的名义。小汉斯为了保持与休的“友情”，不断地满足修的无理要求，最终献上了自己宝贵的生命。<br>
+读完这个故事，我认为休和汉斯都是很可悲的人，他们对友谊都有着可悲的理解。<br>
+休，无疑是聪明的。可是，说他聪明还不如说他像老狐狸一样狡猾奸诈。除此之外，他还是个伪善，自私，贪婪的伪君子。他对待朋友就像对待奴隶一样，只有折磨和索取。当汉斯为了他死去，人们为他举办葬礼时，休并没有内疚和后悔，还说：“这年头，人们都得为自己的慷慨大方而遭受惩罚。”试想，如果人们听到这话，一定不会有人愿意跟他做朋友。<br>
+汉斯，虽然勤劳，大方，但却是一个愚昧的人。当别人不断地提出无理的要求时，他不懂得分辨是非，不懂得保护自己的正当权益，只是一味地配合。最后，失去了生命，失去了一切。<br>
+真正的朋友要互相信任，互相帮助，有困难一起面对，有快乐一起分享。不能像休那样自私，更不能像汉斯那样无知。</p>
 
-</div>
-        <div class="pagination-container">
-            
-            
+        </div>
+        
+        <div class="prev-post">
+            上一篇
+            <a href="https://iaknew.github.io/S-gmF2W3p/">
+                考试前后
+            </a>
+        </div>
+        
+        
+        <div class="next-post">
+            下一篇
+            <a href="https://iaknew.github.io/_y4tcozXc/">
+                说“首创精神” ——读《红船领航》有感
+            </a>
+        </div>
+        
+    </div>
+    </div>
+</body>
+<script>
+    var t_img; // 定时�?
+    var isLoad = true; // 控制变量
+    isImgLoad(function () {
+        // 加载完成
+        $('.postdetailimg').css("display", "block");
+    });
+    // 判断图片加载的函�?
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我�?需要�?�理cover。其它图片可以不管�?
+        // 查找所有封面图，迭代�?�理
+        $('.postdetailimg').each(function () {
+            // 找到�?0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完�?
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时�?
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        } else {
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归�?�?
+            }, 500); // 我这里�?�置的是500�?秒就�?描一次，�?以自己调�?
+        }
+    }
+
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+        <div name="comment" style="background: white;margin-top:100px">
+            <div class="commentcontainer">
+                
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                
+            </div>
         </div>
     </div>
     <div id="landlord">
@@ -633,7 +634,43 @@
         <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
     </div>
 </body>
+<script src="https://iaknew.github.io/media/js/post.js"></script>
+<script>
+    //寻找所有code标签，加复制按钮鸭！
+    var codes = document.getElementsByTagName('code');
+    if (codes.length) {
+        for (var i = 0; i < codes.length; i++) {
+            var code_id = "code_id_" + i;
+            var btn = document.createElement("button");
+            btn.setAttribute("class", "copybt");
+            btn.setAttribute("data-clipboard-target", "#" + code_id);
+            codes[i].setAttribute("id", code_id);
+            btn.innerHTML = '复制代码';
+            codes[i].parentNode.insertBefore(btn, codes[i]);
+        }
+    };
+    var cop = new ClipboardJS('.copybt');
+    cop.on('success', function (e) {
+        alert("代码复制成功了哦");
+        e.clearSelection();
+    });
+    cop.on('error', function (e) {
+        alert("矮油，复制失败了...手动复制吧勇士！");
+        e.clearSelection();
+    });
+</script>
 
-</html>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-<script src="https://iaknew.github.io/media/js/index.js"></script>
+<script>
+$(function () {
+    $('.toggleContainer').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+	$(window).scroll(function() {
+        var st = $(window).scrollTop();
+        if(st > 30){
+            $(".toggleContainer").fadeIn(400);
+        }else{
+            $(".toggleContainer").fadeOut(100);
+        }
+	});
+});
+
+</script>
