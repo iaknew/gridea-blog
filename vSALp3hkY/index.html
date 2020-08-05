@@ -1,253 +1,161 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="//cdn.bootcss.com" />
-<link rel="dns-prefetch" href="//secure.gravatar.com" />
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="renderer" content="webkit">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Cache-Control" content="no-transform"/>
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1596632066850">
+    <meta charset="utf-8" >
 
 <title>Gridea | 余文凯的博客</title>
-<meta name="description" content="一个学生的个人思想" />
 
-<link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/atom-one-dark.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1596632117953">
 <link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
-<!--[if lt IE 9]>
-<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
-<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一个学生的个人思想">
   </head>
-  <body class="bg-grey" gtools_scp_screen_capture_injected="true">
-    <header id="header" class="header bg-white">
-    <div class="navbar-container">
-        <a href="https://iaknew.github.io" class="navbar-logo">
-            <img src="https://iaknew.github.io/images/avatar.png?v=1596632066850" alt="余文凯的博客" />
-            余文凯的博客
-        </a>
-        <div class="navbar-menu">
-          
-            
-              <a href="https://iaknew.github.io">🏠 首页</a>
-            
-          
-            
-              <a href="https://iaknew.github.io/about">😀 关于</a>
-            
-          
-            
-              <a href="https://iaknew.github.io/posts">📗 博客</a>
-            
-          
-            
-              <a href="https://iaknew.github.io/archives">📜 归档</a>
-            
-          
-            
-              <a href="https://iaknew.github.io/subscribe">👉 订阅</a>
-            
-          
-            
-              <a href="https://iaknew.github.io/tags">🔖 标签</a>
-            
-          
-        </div>
-        <div class="navbar-mobile-menu" onclick="">
-            <span class="icon-menu cross"><span class="middle"></span></span>
-            <ul>
-              
-                
-                  <li><a href="https://iaknew.github.io">🏠 首页</a></li>
-                
-              
-                
-                  <li><a href="https://iaknew.github.io/about">😀 关于</a></li>
-                
-              
-                
-                  <li><a href="https://iaknew.github.io/posts">📗 博客</a></li>
-                
-              
-                
-                  <li><a href="https://iaknew.github.io/archives">📜 归档</a></li>
-                
-              
-                
-                  <li><a href="https://iaknew.github.io/subscribe">👉 订阅</a></li>
-                
-              
-                
-                  <li><a href="https://iaknew.github.io/tags">🔖 标签</a></li>
-                
-              
-            </ul>
-        </div>
-    </div>
-</header>
+  <body>
+    <div id="app" class="main">
 
-
-    <div class="main-content common-page clearfix">
-        <div class="common-item">
-            <div class="common-title">
-                Tag: Gridea
-            </div>
-            <div class="post-lists">
-          <div class="post-lists-body">
-            
-            <div class="post-list-item">
-              <div class="post-list-item-container white">
-                <div class="item-label white">
-                  <div class="item-title"><a href="https://iaknew.github.io/hello-gridea/">Hello Gridea</a></div>
-                  <div class="item-meta clearfix">
-                    <div class="item-meta-date"> 2018年12月12日 12:00:00 </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        </div>
-        <div class="lists-navigator clearfix">
-          <ol class="page-navigator">
-  
-  
-</ol>
-
-        </div>
-    </div>
-
-    <footer id="footer" class="footer bg-white">
-	<div class="footer-social">
-		<div class="footer-container clearfix">
-			<div class="social-list">
-        
-          
-            <a class="social" href="" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          
-        
-          
-            <a class="social" href="" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          
-        
-          
-            <a class="social" href="" target="_blank">
-              <i class="fab fa-weibo"></i>
-            </a>
-          
-        
-          
-            <a class="social" href="" target="_blank">
-              <i class="fab fa-zhihu"></i>
-            </a>
-          
-        
-          
-            <a class="social" href="" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-          
-        
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://iaknew.github.io">
+        <img src="https://iaknew.github.io/images/avatar.png?v=1596632117953" class="site-logo">
+        <h1 class="site-title">余文凯的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
       </div>
-		</div>
-	</div>
-	<div class="footer-meta">
-		<div class="footer-container">
-			<div class="meta-item meta-copyright">
-				<div class="meta-copyright-info">
-          <a href="https://iaknew.github.io" class="info-logo">
-            余文凯的博客
+    </div>
+    <div>
+      
+        
+          <a href="https://iaknew.github.io" class="site-nav">
+            🏠 首页
           </a>
-					<div class="info-text">
-              <p id="chakhsu"></p>
-            <p><body>
+        
+      
+        
+          <a href="https://iaknew.github.io/about" class="site-nav">
+            😀 关于
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/posts" class="site-nav">
+            📗 博客
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/archives" class="site-nav">
+            📜 归档
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/subscribe" class="site-nav">
+            👉 订阅
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/tags" class="site-nav">
+            🔖 标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      一个学生的个人思想
+    </div>
+    <div class="site-footer">
+      <body>
     <p>版权所有©2020 余文凯<br/>
     </p>
 </body>
-</html></p>
-          </div>
-				</div>
+</html> | <a class="rss" href="https://iaknew.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: Gridea</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://iaknew.github.io/hello-gridea/">
+                  <h2 class="post-title">Hello Gridea</h2>
+                </a>
+                <div class="post-date">
+                  2018年12月12日 12:00:00
+                </div>
+                <div class="post-abstract">
+                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://iaknew.github.io/hello-gridea/">
+                  <div class="feature-container" style="background-image: url('https://iaknew.github.io/post-images/hello-gridea.png')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
         </div>
-        <div class="meta-item meta-posts">
-            <h3 class="meta-title">最近文章</h3>
-            
-              
-                <li><a href="https://iaknew.github.io/subscribe/">订阅</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/v-fok1D5v/">Markdown Test</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/ylywIucSi/">Hello World</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/sqXHZTOu6/">读《发明家奇奇兔》有感</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/S-gmF2W3p/">考试前后</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/mxN7jFc49/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/_y4tcozXc/">说“首创精神” ——读《红船领航》有感</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/about/">关于本站</a></li>
-              
-            
-              
-                <li><a href="https://iaknew.github.io/hello-gridea/">Hello Gridea</a></li>
-              
-            
-        </div>
-		</div>
-	</div>
-</footer>
+      </div>
+    </div>
 
-    <script src="//cdn.bootcss.com/headroom/0.9.1/headroom.min.js"></script>
-<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-<script>
+AOS.init();
 
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-var header = new Headroom(document.getElementById("header"), {
-    tolerance: 0,
-    offset : 70,
-    classes: {
-      initial: "animated",
-      pinned: "slideDown",
-      unpinned: "slideUp"
-    }
-});
-header.init();
 </script>
-<script>
-var words = [].split(',').map(item => item.trim());
-var chakhsu = function(r){function t(){return b[Math.floor(Math.random()*b.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(r){for(var n=document.createDocumentFragment(),i=0;r>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=t(),n.appendChild(l)}return n}function i(){var t=o[c.skillI];c.step?c.step--:(c.step=g,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<t.length?(c.text+=t[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=a):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%o.length,c.direction="forward")),r.textContent=c.text,r.appendChild(n(c.prefixP<l.length?Math.min(s,s+c.prefixP):Math.min(s,t.length-c.skillP))),setTimeout(i,d)}var l="I work with ",o=words.map(function(r){return r+"."}),a=2,g=1,s=5,d=75,b=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-s,skillI:0,skillP:0,direction:"forward",delay:a,step:g};i()};chakhsu(document.getElementById('chakhsu')); if ('addEventListener' in document) { document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false); }
-</script>
+
+
+
+
+
 
   </body>
 </html>
