@@ -1,68 +1,237 @@
 <html>
-<head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.bootcss.com" />
+<link rel="dns-prefetch" href="//secure.gravatar.com" />
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1596632066850">
+
 <title>余文凯的博客</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/mdui.min.css">
-<link rel="stylesheet" href="https://iaknew.github.io/media/css/modify.css">
-</head>
-<body>
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://iaknew.github.io" class="mdui-typo-headline">余文凯的博客</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+<meta name="description" content="一个学生的个人思想" />
+
+<link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/atom-one-dark.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<!--[if lt IE 9]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  </head>
+  <body class="bg-grey" gtools_scp_screen_capture_injected="true">
+    <header id="header" class="header bg-white">
+    <div class="navbar-container">
+        <a href="https://iaknew.github.io" class="navbar-logo">
+            <img src="https://iaknew.github.io/images/avatar.png?v=1596632066850" alt="余文凯的博客" />
+            余文凯的博客
+        </a>
+        <div class="navbar-menu">
+          
+            
+              <a href="https://iaknew.github.io">🏠 首页</a>
+            
+          
+            
+              <a href="https://iaknew.github.io/about">😀 关于</a>
+            
+          
+            
+              <a href="https://iaknew.github.io/posts">📗 博客</a>
+            
+          
+            
+              <a href="https://iaknew.github.io/archives">📜 归档</a>
+            
+          
+            
+              <a href="https://iaknew.github.io/subscribe">👉 订阅</a>
+            
+          
+            
+              <a href="https://iaknew.github.io/tags">🔖 标签</a>
+            
+          
+        </div>
+        <div class="navbar-mobile-menu" onclick="">
+            <span class="icon-menu cross"><span class="middle"></span></span>
+            <ul>
+              
+                
+                  <li><a href="https://iaknew.github.io">🏠 首页</a></li>
+                
+              
+                
+                  <li><a href="https://iaknew.github.io/about">😀 关于</a></li>
+                
+              
+                
+                  <li><a href="https://iaknew.github.io/posts">📗 博客</a></li>
+                
+              
+                
+                  <li><a href="https://iaknew.github.io/archives">📜 归档</a></li>
+                
+              
+                
+                  <li><a href="https://iaknew.github.io/subscribe">👉 订阅</a></li>
+                
+              
+                
+                  <li><a href="https://iaknew.github.io/tags">🔖 标签</a></li>
+                
+              
+            </ul>
         </div>
     </div>
 </header>
 
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="https://iaknew.github.io" class="menu"><li class="mdui-list-item mdui-ripple">🏠 首页</li></a>
-        <a href="https://iaknew.github.io/about" class="menu"><li class="mdui-list-item mdui-ripple">😀 关于</li></a>
-        <a href="https://iaknew.github.io/posts" class="menu"><li class="mdui-list-item mdui-ripple">📗 博客</li></a>
-        <a href="https://iaknew.github.io/archives" class="menu"><li class="mdui-list-item mdui-ripple">📜 归档</li></a>
-        <a href="https://iaknew.github.io/subscribe" class="menu"><li class="mdui-list-item mdui-ripple">👉 订阅</li></a>
-        <a href="https://iaknew.github.io/tags" class="menu"><li class="mdui-list-item mdui-ripple">🔖 标签</li></a>
-        
-        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
-    </ul>
-</nav>
 
-
-<main class="mdui-container mdui-m-t-2">
-    <div class="mdui-card">
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">标签列表</div>
-        </div>
-        <div class="mdui-card-actions">
-            
-                <a href="https://iaknew.github.io/writing/" class="mdui-chip"><span class="mdui-chip-title">写作</span></a>
-            
+    <div class="main-content page-page">
+        <div class="search-page">
+            <div class="search-title">
+                <h1>所有标签</h1>
+                <h4>目前共计 1 个标签</h4>
+            </div>
+            <div class="search-tags">
+                
+                  <a href="https://iaknew.github.io/writing/" class=" white"># 写作</a>
+                
+                <div class="search-tags-hr deepgrey "></div>
+            </div>
         </div>
     </div>
-</main>
 
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    <body>
+    <footer id="footer" class="footer bg-white">
+	<div class="footer-social">
+		<div class="footer-container clearfix">
+			<div class="social-list">
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-weibo"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-zhihu"></i>
+            </a>
+          
+        
+          
+            <a class="social" href="" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          
+        
+      </div>
+		</div>
+	</div>
+	<div class="footer-meta">
+		<div class="footer-container">
+			<div class="meta-item meta-copyright">
+				<div class="meta-copyright-info">
+          <a href="https://iaknew.github.io" class="info-logo">
+            余文凯的博客
+          </a>
+					<div class="info-text">
+              <p id="chakhsu"></p>
+            <p><body>
     <p>版权所有©2020 余文凯<br/>
     </p>
 </body>
-</html>
-</div>
+</html></p>
+          </div>
+				</div>
+        </div>
+        <div class="meta-item meta-posts">
+            <h3 class="meta-title">最近文章</h3>
+            
+              
+                <li><a href="https://iaknew.github.io/subscribe/">订阅</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/v-fok1D5v/">Markdown Test</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/ylywIucSi/">Hello World</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/sqXHZTOu6/">读《发明家奇奇兔》有感</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/S-gmF2W3p/">考试前后</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/mxN7jFc49/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/_y4tcozXc/">说“首创精神” ——读《红船领航》有感</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/about/">关于本站</a></li>
+              
+            
+              
+                <li><a href="https://iaknew.github.io/hello-gridea/">Hello Gridea</a></li>
+              
+            
+        </div>
+		</div>
+	</div>
+</footer>
 
-<script src="https://iaknew.github.io/media/js/jquery.min.js"></script>
-<script src="https://iaknew.github.io/media/js/mdui.min.js"></script>
-<script src="https://iaknew.github.io/media/js/modify.js"></script>
+    <script src="//cdn.bootcss.com/headroom/0.9.1/headroom.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
 
-</body>
+<script>
+
+
+var header = new Headroom(document.getElementById("header"), {
+    tolerance: 0,
+    offset : 70,
+    classes: {
+      initial: "animated",
+      pinned: "slideDown",
+      unpinned: "slideUp"
+    }
+});
+header.init();
+</script>
+<script>
+var words = [].split(',').map(item => item.trim());
+var chakhsu = function(r){function t(){return b[Math.floor(Math.random()*b.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(r){for(var n=document.createDocumentFragment(),i=0;r>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=t(),n.appendChild(l)}return n}function i(){var t=o[c.skillI];c.step?c.step--:(c.step=g,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<t.length?(c.text+=t[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=a):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%o.length,c.direction="forward")),r.textContent=c.text,r.appendChild(n(c.prefixP<l.length?Math.min(s,s+c.prefixP):Math.min(s,t.length-c.skillP))),setTimeout(i,d)}var l="I work with ",o=words.map(function(r){return r+"."}),a=2,g=1,s=5,d=75,b=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-s,skillI:0,skillP:0,direction:"forward",delay:a,step:g};i()};chakhsu(document.getElementById('chakhsu')); if ('addEventListener' in document) { document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false); }
+</script>
+
+  </body>
 </html>
