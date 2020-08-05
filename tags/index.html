@@ -1,79 +1,68 @@
-<!doctype html>
-<html amp lang="">
-    <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="description" content="一个学生的个人思想" />
-<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-<link rel="preconnect dns-prefetch" href="https://cdn.jsdelivr.net/" crossorigin>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+<html>
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>余文凯的博客</title>
-
-
-  
-
-    
-
-
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<link rel="canonical" href="http://localhost:4000" />
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1596631602718">
-
-<meta name="author" content="">
-
-<meta itemprop="name" content="余文凯的博客">
-<meta itemprop="description" content="一个学生的个人思想">
-<meta itemprop="image" content="">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="余文凯的博客">
-<meta name="twitter:description" content="一个学生的个人思想">
-<meta name="twitter:image" content="" />
-<meta name="twitter:image:alt" content="余文凯的博客" />
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:4000">
-<meta property="og:title" content="余文凯的博客">
-<meta property="og:description" content="一个学生的个人思想">
-<meta property="og:image" content="">
-<meta property="og:image:alt" content="余文凯的博客" />
-<meta property="og:site_name" content="余文凯的博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="tag" content="余文凯的博客" />
-
-
-
-
-
-
-<link rel="alternate" type="application/atom+xml" title="余文凯的博客 - Atom Feed" href="http://localhost:4000/atom.xml">
-
-      
-      
-
-  <meta http-equiv="refresh" content="1;url=http://localhost:4000"> 
-
-  </head>
-  <body>
-    <footer>
-  <div class="footer-container">
-    <div class="footer-menus">
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://iaknew.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://iaknew.github.io/media/css/modify.css">
+</head>
+<body>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://iaknew.github.io" class="mdui-typo-headline">余文凯的博客</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
     </div>
-    <div class="footer-copyright">
-      <body>
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="https://iaknew.github.io" class="menu"><li class="mdui-list-item mdui-ripple">🏠 首页</li></a>
+        <a href="https://iaknew.github.io/about" class="menu"><li class="mdui-list-item mdui-ripple">😀 关于</li></a>
+        <a href="https://iaknew.github.io/posts" class="menu"><li class="mdui-list-item mdui-ripple">📗 博客</li></a>
+        <a href="https://iaknew.github.io/archives" class="menu"><li class="mdui-list-item mdui-ripple">📜 归档</li></a>
+        <a href="https://iaknew.github.io/subscribe" class="menu"><li class="mdui-list-item mdui-ripple">👉 订阅</li></a>
+        <a href="https://iaknew.github.io/tags" class="menu"><li class="mdui-list-item mdui-ripple">🔖 标签</li></a>
+        
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
+</nav>
+
+
+<main class="mdui-container mdui-m-t-2">
+    <div class="mdui-card">
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">标签列表</div>
+        </div>
+        <div class="mdui-card-actions">
+            
+                <a href="https://iaknew.github.io/writing/" class="mdui-chip"><span class="mdui-chip-title">写作</span></a>
+            
+        </div>
+    </div>
+</main>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    <body>
     <p>版权所有©2020 余文凯<br/>
     </p>
 </body>
 </html>
-      
-      
+</div>
 
-    </div>
-  </div>
-</footer>
+<script src="https://iaknew.github.io/media/js/jquery.min.js"></script>
+<script src="https://iaknew.github.io/media/js/mdui.min.js"></script>
+<script src="https://iaknew.github.io/media/js/modify.js"></script>
 
-
-  </body>
+</body>
 </html>

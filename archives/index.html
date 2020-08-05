@@ -1,407 +1,102 @@
-<!doctype html>
-<html amp lang="">
-
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="description" content="一个学生的个人思想" />
-<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-<link rel="preconnect dns-prefetch" href="https://cdn.jsdelivr.net/" crossorigin>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>余文凯的博客</title>
-
-
-  
-
-    
-
-
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<link rel="canonical" href="http://localhost:4000" />
-<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1596631602718">
-
-<meta name="author" content="">
-
-<meta itemprop="name" content="余文凯的博客">
-<meta itemprop="description" content="一个学生的个人思想">
-<meta itemprop="image" content="">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="余文凯的博客">
-<meta name="twitter:description" content="一个学生的个人思想">
-<meta name="twitter:image" content="" />
-<meta name="twitter:image:alt" content="余文凯的博客" />
-
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:4000">
-<meta property="og:title" content="余文凯的博客">
-<meta property="og:description" content="一个学生的个人思想">
-<meta property="og:image" content="">
-<meta property="og:image:alt" content="余文凯的博客" />
-<meta property="og:site_name" content="余文凯的博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="tag" content="余文凯的博客" />
-
-
-
-
-
-
-<link rel="alternate" type="application/atom+xml" title="余文凯的博客 - Atom Feed" href="http://localhost:4000/atom.xml">
-
-      
-      
-
-  </head>
-
-<body class="home blog">
-  <input type="checkbox" id="header-menu-button">
-  
-
-  <header id="commonTop">
-    <div class="top-container">
-      <div class="title-menus-area">
-        <a class="blog-title" href="http://localhost:4000">余文凯的博客</a>
-        <label for="header-menu-button" class="top-menus">
-          <nav class="menu-menu-1-container">
-            <ul id="menu-menu-1" class="menu">
-              
-              
-              <li>
-                <a href="http://localhost:4000" aria-current="page">🏠 首页</a></li>
-              
-              
-              
-              <li>
-                <a href="http://localhost:4000/about" aria-current="page">😀 关于</a></li>
-              
-              
-              
-              <li>
-                <a href="http://localhost:4000/posts" aria-current="page">📗 博客</a></li>
-              
-              
-              
-              <li>
-                <a href="http://localhost:4000/archives" aria-current="page">📜 归档</a></li>
-              
-              
-              
-              <li>
-                <a href="http://localhost:4000/subscribe" aria-current="page">👉 订阅</a></li>
-              
-              
-              
-              <li>
-                <a href="http://localhost:4000/tags" aria-current="page">🔖 标签</a></li>
-              
-              
-            </ul>
-          </nav>
-        </label>
-      </div>
-      <div class="tagline">
-        归档
-      </div>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://iaknew.github.io/media/css/mdui.min.css">
+<link rel="stylesheet" href="https://iaknew.github.io/media/css/modify.css">
+</head>
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://iaknew.github.io" class="mdui-typo-headline">余文凯的博客</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
     </div>
-  </header>
+</header>
 
-  <main>
-
-
-    <div class="main-container">
-  <div class="post-list">
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="https://iaknew.github.io" class="menu"><li class="mdui-list-item mdui-ripple">🏠 首页</li></a>
+        <a href="https://iaknew.github.io/about" class="menu"><li class="mdui-list-item mdui-ripple">😀 关于</li></a>
+        <a href="https://iaknew.github.io/posts" class="menu"><li class="mdui-list-item mdui-ripple">📗 博客</li></a>
+        <a href="https://iaknew.github.io/archives" class="menu"><li class="mdui-list-item mdui-ripple">📜 归档</li></a>
+        <a href="https://iaknew.github.io/subscribe" class="menu"><li class="mdui-list-item mdui-ripple">👉 订阅</li></a>
+        <a href="https://iaknew.github.io/tags" class="menu"><li class="mdui-list-item mdui-ripple">🔖 标签</li></a>
         
-        <h2 class="post-title">
-          <a href="http://localhost:4000/v-fok1D5v/">Markdown Test</a>
-        </h2>
-        <div class="post-excerpt">
-          
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/v-fok1D5v/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
+</nav>
 
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              10
-            </div>
-            <div class="post-month">
-              5月                            
-            </div>  
-          </div>
 
-        </div>
-
-      </div>
-    </article>
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
-        
-        <h2 class="post-title">
-          <a href="http://localhost:4000/ylywIucSi/">Hello World</a>
-        </h2>
-        <div class="post-excerpt">
-          
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/ylywIucSi/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/ylywIucSi/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/ylywIucSi/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/ylywIucSi/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
-
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              16
-            </div>
-            <div class="post-month">
-              4月                            
-            </div>  
-          </div>
-
-        </div>
-
-      </div>
-    </article>
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
-        
-        <div class="flex-box meta-category">
-          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
-        
-        <h2 class="post-title">
-          <a href="http://localhost:4000/sqXHZTOu6/">读《发明家奇奇兔》有感</a>
-        </h2>
-        <div class="post-excerpt">
-          
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/sqXHZTOu6/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
-
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              16
-            </div>
-            <div class="post-month">
-              4月                            
-            </div>  
-          </div>
-
-        </div>
-
-      </div>
-    </article>
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
-        
-        <div class="flex-box meta-category">
-          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
-        
-        <h2 class="post-title">
-          <a href="http://localhost:4000/S-gmF2W3p/">考试前后</a>
-        </h2>
-        <div class="post-excerpt">
-          <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
-
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/S-gmF2W3p/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
-
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              16
-            </div>
-            <div class="post-month">
-              4月                            
-            </div>  
-          </div>
-
-        </div>
-
-      </div>
-    </article>
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
-        
-        <div class="flex-box meta-category">
-          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
-        
-        <h2 class="post-title">
-          <a href="http://localhost:4000/mxN7jFc49/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a>
-        </h2>
-        <div class="post-excerpt">
-          
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/mxN7jFc49/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
-
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              16
-            </div>
-            <div class="post-month">
-              4月                            
-            </div>  
-          </div>
-
-        </div>
-
-      </div>
-    </article>
-    
-    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
-      
-
-      <div class="post-info">
-        
-        <div class="flex-box meta-category">
-          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
-        
-        <h2 class="post-title">
-          <a href="http://localhost:4000/_y4tcozXc/">说“首创精神” ——读《红船领航》有感</a>
-        </h2>
-        <div class="post-excerpt">
-          
-        </div>
-        <div class="flex-box justify-between">
-          <a href="http://localhost:4000/_y4tcozXc/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
-          <div class="flex-box post-meta-box">
-            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/"><span class="iconfont icon-mr-postmeta"></span></a>
-            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/"><span
-                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
-          </div>
-
-          <div class="flex-box post-publish-date">
-            <div class="post-date">
-              16
-            </div>
-            <div class="post-month">
-              4月                            
-            </div>  
-          </div>
-
-        </div>
-
-      </div>
-    </article>
+<main class="mdui-container mdui-m-t-2">
     
 
-  </div>
-  <div>
-    <nav class="navigation pagination" role="navigation" aria-label="文章">
-      <h2 class="screen-reader-text">文章导航</h2>
-      <div class="nav-links">
-        
-        
-      </div>
-    </nav>
-  </div>
-</div>
-    <div class="sidebar">
-  <aside id="profile-2" class="widget widget_profile">
-    <div class="profile-box">
-      <div class="profile-avatar">
-        <amp-img src="http://localhost:4000/images/avatar.png?v=1596631602718" alt="avatar"
-          layout="fill"></amp-img>
-      </div>
-      <div class="profile-content">
-        <div class="amp-wp-681d4ff">
-          一个学生的个人思想
-        </div>
-
-      </div>
+<section class="mdui-card">
+    <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">归档</div>
     </div>
-  </aside>
-  
-    
-
-    
-
-   
-
-  <aside id="linkcat-2" class="widget widget_links">
-  <h4 class="widget-title">友链</h4>
-  <ul class="xoxo blogroll">
-    
-  </ul>
-</aside>
-
-
-</div>
-    <div class="scrolltop-wrap">
-  <span tabindex="0" role="button" class="go-top" on="tap:commonTop.scrollTo(duration=500, position=top)">
-    <span class="iconfont"></span>
-  </span>
-</div>
-
-    
-  </main>
-
-  <footer>
-  <div class="footer-container">
-    <div class="footer-menus">
+    <div class="mdui-card-content">
+        
+            <h2 class="mdui-typo-display-1">2020</h2>
+            <article class="mdui-list">
+                
+                        
+                            <a href="https://iaknew.github.io/v-fok1D5v/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">Markdown Test</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年05月10日 10:49:15</div></div></a>
+                        
+                
+                        
+                            <a href="https://iaknew.github.io/ylywIucSi/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">Hello World</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年04月16日 5:43:57</div></div></a>
+                        
+                
+                        
+                            <a href="https://iaknew.github.io/sqXHZTOu6/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">读《发明家奇奇兔》有感</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年04月16日 2:59:54</div></div></a>
+                        
+                
+                        
+                            <a href="https://iaknew.github.io/S-gmF2W3p/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">考试前后</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年04月16日 2:59:03</div></div></a>
+                        
+                
+                        
+                            <a href="https://iaknew.github.io/mxN7jFc49/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年04月16日 2:58:14</div></div></a>
+                        
+                
+                        
+                            <a href="https://iaknew.github.io/_y4tcozXc/" class="mdui-list-item mdui-list-item-title mdui-ripple"><div class="mdui-list-item-content"><div class="mdui-list-item-title">说“首创精神” ——读《红船领航》有感</div><div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">2020年04月16日 2:54:18</div></div></a>
+                        
+                
+            </article>
+        
     </div>
-    <div class="footer-copyright">
-      <body>
+</section>
+</main>
+
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    
+    
+</nav>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    <body>
     <p>版权所有©2020 余文凯<br/>
     </p>
 </body>
 </html>
-      
-      
+</div>
 
-    </div>
-  </div>
-</footer>
-
-  
+<script src="https://iaknew.github.io/media/js/jquery.min.js"></script>
+<script src="https://iaknew.github.io/media/js/mdui.min.js"></script>
+<script src="https://iaknew.github.io/media/js/modify.js"></script>
 
 </body>
-
 </html>
