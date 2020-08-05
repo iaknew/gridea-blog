@@ -1,350 +1,407 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html amp lang="">
 
-<head>
-    <meta charset="utf-8" />
-<title>
-    余文凯的博客
-</title>
-<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="余文凯">
-<meta name="description" content="你好，我是余文凯，一位学生。">
-<meta name="keywords" content="普通学生,00后,写作,编程">
-<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
-<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css" />
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="description" content="一个学生的个人思想" />
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<link rel="preconnect dns-prefetch" href="https://cdn.jsdelivr.net/" crossorigin>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<title>余文凯的博客</title>
 
-            <!--CDN样式-->
-            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
-            <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
-            
-                <script>
-                    (function() {
-                        var bp = document.createElement('script');
-                        var curProtocol = window.location.protocol.split(':')[0];
-                        if (curProtocol === 'https') {
-                            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                        } else {
-                            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                        }
-                        var s = document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(bp, s);
-                    })();
-                </script>
-                
-</head>
 
-<body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <a href="https://iaknew.github.io">
-                    余文凯的博客
-                </a>
-            </div>
-
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="https://iaknew.github.io">
-                        🏠 首页
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/about">
-                        😀 关于
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/posts">
-                        📗 博客
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/archives">
-                        📜 归档
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/subscribe">
-                        👉 订阅
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/tags">
-                        🔖 标签
-                    </a>
-                    
-                        <input id="switch_default" type="checkbox" class="switch_default">
-                        <label for="switch_default" class="toggleBtn"></label>
-            </div>
-            <form id="gridea-search-form" data-update="1596460382099" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-            </form>
-        </div>
-    </nav>
+  
 
     
-        <nav class="navbar-mobile" id="nav-mobile">
-            <div class="container">
-                <div class="navbar-header">
-                    <div>
-                        <a href="https://iaknew.github.io">
-                            余文凯的博客
-                        </a>
-                        <!--en-->
-                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
-                        <!--zh-->
-                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
-                    </div>
-                    <form id="gridea-search-form" data-update="1596460382099" action="/search/index.html">
-                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-                    </form>
-                    <!--en-->
-                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
-                    <!--zh-->
-                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
 
-                </div>
-                <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="https://iaknew.github.io">
-                            🏠 首页
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/about">
-                            😀 关于
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/posts">
-                            📗 博客
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/archives">
-                            📜 归档
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/subscribe">
-                            👉 订阅
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/tags">
-                            🔖 标签
-                        </a>
-                        
-                </div>
-            </div>
-        </nav>
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementById("menu-toggle-en");
-        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
 
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (toggleMenu.display != "none") {
-            if (toggleMenu.classList.contains("active")) {
-                toggleMenu.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        } else if (toggleMenu_zh.display != "none") {
-            if (toggleMenu_zh.classList.contains("active")) {
-                toggleMenu_zh.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu_zh.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        }
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<link rel="canonical" href="http://localhost:4000" />
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1596631602718">
 
-    }
-</script>
-            <div class="main">
-                <div class="post-wrap archive">
-                    
-                        
-                            <h3>
-                                2020
-                            </h3>
-                            
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/v-fok1D5v/">
-                                            Markdown Test
-                                        </a><span class="archive-item-date">2020年05月10日 10:49:15 </span></article>
-                                    
-                                        
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/ylywIucSi/">
-                                            Hello World
-                                        </a><span class="archive-item-date">2020年04月16日 5:43:57 </span></article>
-                                    
-                                        
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/sqXHZTOu6/">
-                                            读《发明家奇奇兔》有感
-                                        </a><span class="archive-item-date">2020年04月16日 2:59:54 </span></article>
-                                    
-                                        
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/S-gmF2W3p/">
-                                            考试前后
-                                        </a><span class="archive-item-date">2020年04月16日 2:59:03 </span></article>
-                                    
-                                        
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/mxN7jFc49/">
-                                            真正的友谊——读《王尔德童话》之《忠实的朋友》有感
-                                        </a><span class="archive-item-date">2020年04月16日 2:58:14 </span></article>
-                                    
-                                        
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link" href="https://iaknew.github.io/_y4tcozXc/">
-                                            说“首创精神” ——读《红船领航》有感
-                                        </a><span class="archive-item-date">2020年04月16日 2:54:18 </span></article>
-                                    
-                                        
-                                            
-                </div>
-                <div class="pagination-container">
-                    
-                        
-                                
-                                        
-                </div>
-            </div>
+<meta name="author" content="">
+
+<meta itemprop="name" content="余文凯的博客">
+<meta itemprop="description" content="一个学生的个人思想">
+<meta itemprop="image" content="">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="余文凯的博客">
+<meta name="twitter:description" content="一个学生的个人思想">
+<meta name="twitter:image" content="" />
+<meta name="twitter:image:alt" content="余文凯的博客" />
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000">
+<meta property="og:title" content="余文凯的博客">
+<meta property="og:description" content="一个学生的个人思想">
+<meta property="og:image" content="">
+<meta property="og:image:alt" content="余文凯的博客" />
+<meta property="og:site_name" content="余文凯的博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="tag" content="余文凯的博客" />
+
+
+
+
+
+
+<link rel="alternate" type="application/atom+xml" title="余文凯的博客 - Atom Feed" href="http://localhost:4000/atom.xml">
+
+      
+      
+
+  </head>
+
+<body class="home blog">
+  <input type="checkbox" id="header-menu-button">
+  
+
+  <header id="commonTop">
+    <div class="top-container">
+      <div class="title-menus-area">
+        <a class="blog-title" href="http://localhost:4000">余文凯的博客</a>
+        <label for="header-menu-button" class="top-menus">
+          <nav class="menu-menu-1-container">
+            <ul id="menu-menu-1" class="menu">
+              
+              
+              <li>
+                <a href="http://localhost:4000" aria-current="page">🏠 首页</a></li>
+              
+              
+              
+              <li>
+                <a href="http://localhost:4000/about" aria-current="page">😀 关于</a></li>
+              
+              
+              
+              <li>
+                <a href="http://localhost:4000/posts" aria-current="page">📗 博客</a></li>
+              
+              
+              
+              <li>
+                <a href="http://localhost:4000/archives" aria-current="page">📜 归档</a></li>
+              
+              
+              
+              <li>
+                <a href="http://localhost:4000/subscribe" aria-current="page">👉 订阅</a></li>
+              
+              
+              
+              <li>
+                <a href="http://localhost:4000/tags" aria-current="page">🔖 标签</a></li>
+              
+              
+            </ul>
+          </nav>
+        </label>
+      </div>
+      <div class="tagline">
+        归档
+      </div>
     </div>
+  </header>
+
+  <main>
+
+
+    <div class="main-container">
+  <div class="post-list">
     
-        <footer id="footer" class="footer">
-            <div class="copyright">
-                
-                    <div class="Like">
-                        <div class="tip" data-tooltip="Do you like it?">
-                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
-                        aria-hidden="true">
-                        <use xlink:href="#like"></use>
-                    </svg><b class="like_text" id="star"></b></a>
-                        </div>
-                    </div>
-                    
-                        <body>
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/v-fok1D5v/">Markdown Test</a>
+        </h2>
+        <div class="post-excerpt">
+          
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/v-fok1D5v/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/v-fok1D5v/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              10
+            </div>
+            <div class="post-month">
+              5月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/ylywIucSi/">Hello World</a>
+        </h2>
+        <div class="post-excerpt">
+          
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/ylywIucSi/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/ylywIucSi/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/ylywIucSi/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/ylywIucSi/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              16
+            </div>
+            <div class="post-month">
+              4月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <div class="flex-box meta-category">
+          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/sqXHZTOu6/">读《发明家奇奇兔》有感</a>
+        </h2>
+        <div class="post-excerpt">
+          
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/sqXHZTOu6/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/sqXHZTOu6/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              16
+            </div>
+            <div class="post-month">
+              4月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <div class="flex-box meta-category">
+          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/S-gmF2W3p/">考试前后</a>
+        </h2>
+        <div class="post-excerpt">
+          <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
+
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/S-gmF2W3p/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/S-gmF2W3p/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              16
+            </div>
+            <div class="post-month">
+              4月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <div class="flex-box meta-category">
+          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/mxN7jFc49/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a>
+        </h2>
+        <div class="post-excerpt">
+          
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/mxN7jFc49/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/mxN7jFc49/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              16
+            </div>
+            <div class="post-month">
+              4月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+    <article class="list-box post type-post status-publish format-standard has-post-thumbnail hentry category-xiaoqiao">
+      
+
+      <div class="post-info">
+        
+        <div class="flex-box meta-category">
+          <a class="post-cate" href="http://localhost:4000/writing/">写作</a></div>
+        
+        <h2 class="post-title">
+          <a href="http://localhost:4000/_y4tcozXc/">说“首创精神” ——读《红船领航》有感</a>
+        </h2>
+        <div class="post-excerpt">
+          
+        </div>
+        <div class="flex-box justify-between">
+          <a href="http://localhost:4000/_y4tcozXc/" class="read-more">阅读更多<span class="iconfont icon-ml-readmore"></span></a>
+          <div class="flex-box post-meta-box">
+            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/#comments"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/"><span class="iconfont icon-mr-postmeta"></span></a>
+            <a class="post-meta" href="http://localhost:4000/_y4tcozXc/"><span
+                class="iconfont icon-mr-postmeta icon-like-sp"></span></a>
+          </div>
+
+          <div class="flex-box post-publish-date">
+            <div class="post-date">
+              16
+            </div>
+            <div class="post-month">
+              4月                            
+            </div>  
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+    
+
+  </div>
+  <div>
+    <nav class="navigation pagination" role="navigation" aria-label="文章">
+      <h2 class="screen-reader-text">文章导航</h2>
+      <div class="nav-links">
+        
+        
+      </div>
+    </nav>
+  </div>
+</div>
+    <div class="sidebar">
+  <aside id="profile-2" class="widget widget_profile">
+    <div class="profile-box">
+      <div class="profile-avatar">
+        <amp-img src="http://localhost:4000/images/avatar.png?v=1596631602718" alt="avatar"
+          layout="fill"></amp-img>
+      </div>
+      <div class="profile-content">
+        <div class="amp-wp-681d4ff">
+          一个学生的个人思想
+        </div>
+
+      </div>
+    </div>
+  </aside>
+  
+    
+
+    
+
+   
+
+  <aside id="linkcat-2" class="widget widget_links">
+  <h4 class="widget-title">友链</h4>
+  <ul class="xoxo blogroll">
+    
+  </ul>
+</aside>
+
+
+</div>
+    <div class="scrolltop-wrap">
+  <span tabindex="0" role="button" class="go-top" on="tap:commonTop.scrollTo(duration=500, position=top)">
+    <span class="iconfont"></span>
+  </span>
+</div>
+
+    
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-menus">
+    </div>
+    <div class="footer-copyright">
+      <body>
     <p>版权所有©2020 余文凯<br/>
     </p>
 </body>
 </html>
-                            
-                                <b id="hitokoto"></b><br>
-                                
-                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
-            <path
-                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
-                fill="#93b5cf"></path>
-        </svg>
-                                        余文凯的博客 &copy;Copyright
-                                            <script>
-                                                var date = new Date();
-                                                document.write("" + date.getFullYear());
-                                            </script>
-                                            | Powered by
-                                            <a href="https://gridea.dev" target="_blank">
-                                                Gridea
-                                            </a>
-            </div>
-            <div id="update" style="display:none;">
-                on
-            </div>
-            
-                <div id="version" style="display:none;">
-                    1.7.4
-                </div>
-                
-                    <script>
-                        var pat = '';
-                        
-                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
-                    </script>
-        </footer>
-        
-            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
-            
-                <script>
-                    
-                    
-                    loadlive2d();
-                    
-                    
-                    hitokoto();
-                    
-                    getStar();
-                    hljs.initHighlighting();
-                    console.clear();
-                    
-                    CheckVersion();
-                    
-                    var newDate = new Date();
-                    newDate.setTime(1596460382099);
-                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
-                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
-                </script>
-                
-                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
-                    <script>
-                        (function(T, h, i, n, k, P, a, g, e) {
-                            g = function() {
-                                P = h.createElement(i);
-                                a = h.getElementsByTagName(i)[0];
-                                P.src = k;
-                                P.charset = "utf-8";
-                                P.async = 1;
-                                a.parentNode.insertBefore(P, a)
-                            };
-                            T["ThinkPageWeatherWidgetObject"] = n;
-                            T[n] || (T[n] = function() {
-                                (T[n].q = T[n].q || []).push(arguments)
-                            });
-                            T[n].l = +new Date();
-                            if (T.attachEvent) {
-                                T.attachEvent("onload", g)
-                            } else {
-                                T.addEventListener("load", g, false)
-                            }
-                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
-                    </script>
-                    <script>
-                        var wearther_margin = "10px 10px";
-                        
-                        tpwidget("init", {
-                            "flavor": "bubble",
-                            "location": "WX4FBXXFKE4F",
-                            "geolocation": "enabled",
-                            "position": "bottom-left",
-                            "margin": wearther_margin,
-                            "language": "zh-chs",
-                            "unit": "c",
-                            "theme": "chameleon",
-                            "uid": "UFC977E1C7",
-                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
-                        });
-                        tpwidget("show");
-                    </script>
-                    
-        </div>
+      
+      
+
+    </div>
+  </div>
+</footer>
+
+  
+
 </body>
 
 </html>
