@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iaknew.github.io</id>
     <title>余文凯的博客</title>
-    <updated>2020-08-06T00:57:40.903Z</updated>
+    <updated>2020-08-06T00:58:04.652Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iaknew.github.io"/>
     <link rel="self" href="https://iaknew.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://iaknew.github.io/images/avatar.png</logo>
     <icon>https://iaknew.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 余文凯的博客</rights>
-    <entry>
-        <title type="html"><![CDATA[留言板]]></title>
-        <id>https://iaknew.github.io/comment/</id>
-        <link href="https://iaknew.github.io/comment/">
-        </link>
-        <updated>2020-08-06T00:53:03.000Z</updated>
-        <content type="html"><![CDATA[<p>交换友链或者给我留言可以在下面进行评论。</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown Test]]></title>
         <id>https://iaknew.github.io/v-fok1D5v/</id>
