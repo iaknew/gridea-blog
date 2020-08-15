@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iaknew.github.io</id>
     <title>余文凯 Mickey</title>
-    <updated>2020-08-15T14:15:29.438Z</updated>
+    <updated>2020-08-15T14:18:23.262Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iaknew.github.io"/>
     <link rel="self" href="https://iaknew.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://iaknew.github.io/images/avatar.png</logo>
     <icon>https://iaknew.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 余文凯 Mickey</rights>
+    <entry>
+        <title type="html"><![CDATA[零碎杂想]]></title>
+        <id>https://iaknew.github.io/ZwbyG-ep-/</id>
+        <link href="https://iaknew.github.io/ZwbyG-ep-/">
+        </link>
+        <updated>2020-08-15T14:16:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>这里是属于我的随想，你可以看看我的想法。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这里是属于我的随想，你可以看看我的想法。</p>
+<!-- more -->
+<p><strong>2020年8月15日</strong><br>
+第一篇随笔。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[身残志不残]]></title>
         <id>https://iaknew.github.io/m7fxB9gTe/</id>
