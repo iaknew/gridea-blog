@@ -3,7 +3,7 @@
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>随想 | 👋 余文凯 Mickey</title>
+<title>未来的世界 | 👋 余文凯 Mickey</title>
 <link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1597496832493">
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
@@ -30,11 +30,11 @@
 
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -83,45 +83,69 @@
         </div>
     </div>
 </nav>
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #随想
-            </h2>
-        </div>
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://iaknew.github.io/subscribe/">
-                            <span class="post-title gt-c-content-color-first">订阅</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020年06月12日 ·
-                        </time>
-                        
-                            <a href="https://iaknew.github.io/thinking/" class="post-tag">
-                                # 随想
-                            </a>
-                        
-                    </div>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    未来的世界
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020年08月15日 ·
+                    </time>
+                    
                 </div>
-                
+                <div class="post-content">
+                    <p>2197年，22世纪末期。人们的生活效率大大提升。这都要归功于未来世界的各种新发明。</p>
+<!-- more -->
+<h3 id="汽车">汽车</h3>
+<p>首先上场的是汽车。以前，汽车排放出大量尾气，污染环境，还必须要有汽油才能开。但是现在的汽车用太阳能代替汽油能量，也不会排放出有害的气体，并且速度快。</p>
+<h3 id="电池">电池</h3>
+<p>电池紧跟随后。曾经的电池，没电了就要更换，非常麻烦。但现在，人们研发出了寿命约50年的电池，相信人们可以再研究出寿命更长的电池。</p>
+<h3 id="搬家">搬家</h3>
+<p>曾经的房屋，搬家十分地复杂，搬家公司必须要经历一场“大灾难”。又要签合同，又要听从业主的命令，还要把旧居里面的东西清理干净……这样折腾了好几天，业主和工人们都晕头转向。而现在——每个人的家都可大可小，可以轻松搬家。</p>
+<p>……虽然这只是我自己的想象，但或许真的有那一天呢！</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://iaknew.github.io/ylywIucSi/" class="post-title gt-a-link">
+                    Hello World
+                </a>
             </div>
         
-    </div>
-</div>
-        <div class="pagination-container">
-    
-    
-</div>
+
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '59499a209d6de0dd5ad0',
+    clientSecret: '3f3739bf888fec11a8930fabd9848f28b2fd51ee',
+    repo: 'iaknew.github.io',
+    owner: 'iaknew',
+    admin: ['iaknew'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+            
+
+            
+        
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">我是一个00后学生，正在学习C++的知识。这个博客将会记录我的生活。</div>
@@ -164,6 +188,7 @@
 <script>
     hljs.initHighlightingOnLoad()
 </script>
+
 
     </div>
 </div>

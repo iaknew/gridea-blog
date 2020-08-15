@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iaknew.github.io</id>
     <title>👋 余文凯 Mickey</title>
-    <updated>2020-08-13T03:29:22.431Z</updated>
+    <updated>2020-08-15T13:07:15.792Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iaknew.github.io"/>
     <link rel="self" href="https://iaknew.github.io/atom.xml"/>
@@ -10,6 +10,45 @@
     <logo>https://iaknew.github.io/images/avatar.png</logo>
     <icon>https://iaknew.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 👋 余文凯 Mickey</rights>
+    <entry>
+        <title type="html"><![CDATA[独坐敬亭山]]></title>
+        <id>https://iaknew.github.io/0_YOaCQOK/</id>
+        <link href="https://iaknew.github.io/0_YOaCQOK/">
+        </link>
+        <updated>2020-08-15T13:05:56.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。——【唐】李白《独坐敬亭山》</p>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。——【唐】李白《独坐敬亭山》</p>
+</blockquote>
+<!-- more -->
+<p>我独自停留在这座美丽的敬亭山。遥望天空，一群鸟儿看到了我，厌恶似的高高飞走，直到消失不见。天空中还有一朵云悠闲地飘来飘去，看到我也慢慢地飘走了。哎，这些年因为战乱，朋友和亲人逃的逃，抓的抓，死的死，甚至连鸟儿和云朵都嫌弃我而离去，谁还会对我不离不弃呢？<br>
+我看着这座敬亭山，敬亭山似乎也在看着我。我和它互相看着，谁也看不够谁。能够对我不离不弃的，只剩下了敬亭山。我多么希望它是我的一位朋友，向它说出我这些年来说不尽的痛苦和委屈，哪怕只有一句话也好！<br>
+可是，它只是一座山，它没有嘴巴，没有思想，怎么可能和我说话啊！<br>
+在此时此刻，除了向这座美丽的敬亭山诉苦之外，也只能拿起手中的纸笔，用一首诗来表述自己那种因为战乱而变得孤独寂寞的心情：“众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。”</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[未来的世界]]></title>
+        <id>https://iaknew.github.io/XHlbdt7XF/</id>
+        <link href="https://iaknew.github.io/XHlbdt7XF/">
+        </link>
+        <updated>2020-08-15T13:01:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>2197年，22世纪末期。人们的生活效率大大提升。这都要归功于未来世界的各种新发明。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>2197年，22世纪末期。人们的生活效率大大提升。这都要归功于未来世界的各种新发明。</p>
+<!-- more -->
+<h3 id="汽车">汽车</h3>
+<p>首先上场的是汽车。以前，汽车排放出大量尾气，污染环境，还必须要有汽油才能开。但是现在的汽车用太阳能代替汽油能量，也不会排放出有害的气体，并且速度快。</p>
+<h3 id="电池">电池</h3>
+<p>电池紧跟随后。曾经的电池，没电了就要更换，非常麻烦。但现在，人们研发出了寿命约50年的电池，相信人们可以再研究出寿命更长的电池。</p>
+<h3 id="搬家">搬家</h3>
+<p>曾经的房屋，搬家十分地复杂，搬家公司必须要经历一场“大灾难”。又要签合同，又要听从业主的命令，还要把旧居里面的东西清理干净……这样折腾了好几天，业主和工人们都晕头转向。而现在——每个人的家都可大可小，可以轻松搬家。</p>
+<p>……虽然这只是我自己的想象，但或许真的有那一天呢！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>https://iaknew.github.io/ylywIucSi/</id>
