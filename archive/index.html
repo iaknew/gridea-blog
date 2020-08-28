@@ -1,412 +1,395 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-<title>
-    余文凯的博客
-</title>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="https://iaknew.github.io">
 
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="余文凯">
-<meta name="description" content="只是一位学生而已，没什么好说的。">
-<meta name="keywords" content="">
-<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+    <head>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>余文凯的博客</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/css/style.min.css" />
 
-<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css" />
+<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1598586853068">
+<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<link rel="stylesheet" href="https://iaknew.github.io/media/css/normalize.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/css/tags.css" />
-
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/highlight.min.js"></script>
+  </head>
 
 
 
-	<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-<!-- Valine test
-<script src="https://iaknew.github.io/media/script/Valine144.min.js"></script>
--->
 
-        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+  <body>
+ 
+        <a href="#top" id="toTop"></a>
+<div id="loading">
+  <ul class="bokeh">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<header class="site-header" id="site-nav">
+  <div class="wrapper">
+    <div class="width">
+      <h1><id="logo" class="site-title" href="/">余文凯的博客</h1>
 
-	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/tocbot.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/script.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/icon.min.js"></script>
+      <nav class="site-nav">
+          <a href="#" class="menu-icon">
+              <svg viewBox="0 0 18 15">
+                  <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
+                  <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
+                  <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+              </svg>
+          </a>
+          <div class="trigger">
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io">
+                  🏠 首页
+              </a> 
+              
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io/about">
+                  😀 关于
+              </a> 
+              
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io/posts">
+                  📜 博客
+              </a> 
+              
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io/archive">
+                  📖 归档
+              </a> 
+              
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io/tags">
+                  🔖 标签
+              </a> 
+              
+            
+              
+                <a class="page-link" id="other" href="https://iaknew.github.io/somethink">
+                  💾 想法
+              </a> 
+              
+            
+          </div>
+      </nav>
 
-	<script src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/script/loading.js" />
-
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.1/build/highlight.min.js"></script>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atelier-estuary-dark.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
-        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
-                
-			<!-- 百度统计 -->
-		    
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/live2d/css/live2d.css" />
-
-<meta charset="utf-8">
-<!--Thanks maomao
-<link rel="stylesheet" href="https://maomao.ink/usr/themes/jianshu/css/archives.css" type="text/css">
--->
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.4/assets/media/css/archives.css" type="text/css">
-
-</head>
-<body>
-
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <a href="https://iaknew.github.io">
-                    余文凯的博客
-                </a>
-            </div>
-
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="https://iaknew.github.io">
-                        🏠 首页
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/about">
-                        😀 关于
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/posts">
-                        📜 博客
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/archive">
-                        📖 归档
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/tags">
-                        🔖 标签
-                    </a>
-                    
-                    <a class="menu-item" href="https://iaknew.github.io/somethink">
-                        💾 想法
-                    </a>
-                    
-                        <input id="switch_default" type="checkbox" class="switch_default">
-                        <label for="switch_default" class="toggleBtn"></label>
-            </div>
-
-            <form id="gridea-search-form" data-update="1598442835344" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
-				   -moz-border-radius:8px;
-				   -ms-border-radius:8px;
-				   -o-border-radius:8px;
-				   border-radius:8px;
-				   border:1px solid #e7f3f9;
-				   outline:none;
-				   padding:7px 0px;
-				   BACKGROUND-COLOR: transparent">
-            </form>
-        </div>
-
-    </nav>
-
-    
-        <nav class="navbar-mobile" id="nav-mobile">
-            <div class="container">
-                <div class="navbar-header">
-                    <div>
-                        <a href="https://iaknew.github.io">
-                            余文凯的博客
-                        </a>
-                        <!--en-->
-                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
-                        <!--zh-->
-                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;\u6697\u9ED1</a>
-                    </div>
-                    <form id="gridea-search-form" data-update="1598442835344" action="/search/index.html">
-                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="🔍Search..." style = "-webkit-border-radius:8px;
-				   -moz-border-radius:8px;
-				   -ms-border-radius:8px;
-				   -o-border-radius:8px;
-				   border-radius:8px;
-				   border:1px solid #62a3d3;
-				   outline:none;
-				   padding:7px 0px;
-				   BACKGROUND-COLOR: transparent">
-                    </form>
-                    <!--en-->
-                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
-                    <!--zh-->
-                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
-
-                </div>
-                <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="https://iaknew.github.io">
-                            🏠 首页
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/about">
-                            😀 关于
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/posts">
-                            📜 博客
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/archive">
-                            📖 归档
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/tags">
-                            🔖 标签
-                        </a>
-                        
-                        <a class="menu-item" href="https://iaknew.github.io/somethink">
-                            💾 想法
-                        </a>
-                        
-                </div>
-            </div>
-        </nav>
-</header>
-
-<style>
-input:focus{
-/* 
-            outline: 0;
-	    border: 1px solid #f95d5d;
-	    box-shadow: 0px 0px 10px 0px #f95d5d;
-*/
-	    border-style:solid;  
-            border-color: #03a9f4;  
-            box-shadow: 0 0 15px #03a9f4;
-  }
-</style>
-
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
 
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementById("menu-toggle-en");
-        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
-
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (toggleMenu.display != "none") {
-            if (toggleMenu.classList.contains("active")) {
-                toggleMenu.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        } else if (toggleMenu_zh.display != "none") {
-            if (toggleMenu_zh.classList.contains("active")) {
-                toggleMenu_zh.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu_zh.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        }
-
-    }
+  new Darkmode({ label: '🌓' }).showWidget();
 </script>
- 
-<div class="main">
-<div class="post-wrap archive">
+</header>
 
-<ul class="archive-list">
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home">
+    
+        <ul class="post-list">
+  
 
-                
-                
-                <h3>
-		2020
-		</h3>
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/m7fxB9gTe/">
+            <h2 class="post-title">身残志不残</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年08月15日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/m7fxB9gTe/">
+        <div class="post-abstract">
+          <p>我最敬佩的人，就是身残志坚的克余伯伯。我一想起他，就会想起他拿着拐杖踽踽独行的身影……</p>
 
-                
-                
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/m7fxB9gTe/">
+          Read More
+      </a>
+  </li>
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年08月15日
- 		</span> </time> 
+</div>
+  
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/m7fxB9gTe/">
-                                            身残志不残
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/0_YOaCQOK/">
+            <h2 class="post-title">独坐敬亭山</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年08月15日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/0_YOaCQOK/">
+        <div class="post-abstract">
+          <blockquote>
+<p>众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。——【唐】李白《独坐敬亭山》</p>
+</blockquote>
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年08月15日
- 		</span> </time> 
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/0_YOaCQOK/">
+          Read More
+      </a>
+  </li>
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/0_YOaCQOK/">
-                                            独坐敬亭山
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+</div>
+  
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年08月15日
- 		</span> </time> 
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/XHlbdt7XF/">
+            <h2 class="post-title">未来的世界</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年08月15日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/XHlbdt7XF/">
+        <div class="post-abstract">
+          <p>2197年，22世纪末期。人们的生活效率大大提升。这都要归功于未来世界的各种新发明。</p>
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/XHlbdt7XF/">
-                                            未来的世界
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/XHlbdt7XF/">
+          Read More
+      </a>
+  </li>
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年04月16日
- 		</span> </time> 
+</div>
+  
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/ylywIucSi/">
-                                            Hello World
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/ylywIucSi/">
+            <h2 class="post-title">Hello World</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年04月16日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/thinking/" class="post-tag">
+      # 随想
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/ylywIucSi/">
+        <div class="post-abstract">
+          <p>用了几年的Wordpress.com，现在总算搬到了这里。<br>
+我的这个博客是“Gridea+Github Pages”建立的，非常方便。<br>
+这里记录我的生活，偶尔也会有一些技术博客。<br>
+所以，请多多关照！</p>
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年04月16日
- 		</span> </time> 
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/ylywIucSi/">
+          Read More
+      </a>
+  </li>
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/sqXHZTOu6/">
-                                            读《发明家奇奇兔》有感
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+</div>
+  
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年04月16日
- 		</span> </time> 
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/sqXHZTOu6/">
+            <h2 class="post-title">读《发明家奇奇兔》有感</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年04月16日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/sqXHZTOu6/">
+        <div class="post-abstract">
+          
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/sqXHZTOu6/">
+          Read More
+      </a>
+  </li>
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/S-gmF2W3p/">
-                                            考试前后
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+</div>
+  
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年04月16日
- 		</span> </time> 
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/S-gmF2W3p/">
+            <h2 class="post-title">考试前后</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年04月16日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/S-gmF2W3p/">
+        <div class="post-abstract">
+          <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/mxN7jFc49/">
-                                            真正的友谊——读《王尔德童话》之《忠实的朋友》有感
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
-                
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/S-gmF2W3p/">
+          Read More
+      </a>
+  </li>
 
-                <li> <time class="cbp_tmtime archive-item-date"> <span> 2020年04月16日
- 		</span> </time> 
+</div>
+  
 
-		<div class="cbp_tmlabel">
-		<p><a class="archive-item-link" href="https://iaknew.github.io/post/_y4tcozXc/">
-                                            说“首创精神” ——读《红船领航》有感
-                     </a>
-		</p>
-		</div></li>
-                                    
-                                        
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/mxN7jFc49/">
+            <h2 class="post-title">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年04月16日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/mxN7jFc49/">
+        <div class="post-abstract">
+          <p>暑假里，我读了《王尔德童话》这本书。其中，《忠实的朋友》这一篇童话让我有了很大的感触。<br>
+它通过水老鼠、朱顶雀和鸭妈妈的对话讲述了年轻人小汉斯和磨坊主休之间的关于“友谊”的故事。休自称是汉斯的朋友，并不断以朋友的名义逼汉斯替他做各种苦活，还从汉斯手里无偿拿走自己需要的东西——当然也是以朋友的名义。小汉斯为了保持与休的“友情”，不断地满足修的无理要求，最终献上了自己宝贵的生命。</p>
 
-                                            
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/mxN7jFc49/">
+          Read More
+      </a>
+  </li>
 
-                <div class="pagination-container">
-                    
-                        
-                                
-                                        
+</div>
+  
 
+    <div class="jumbotron">
+  <li>
+      <h2>
+          <a class="post-link" href="https://iaknew.github.io/post/_y4tcozXc/">
+            <h2 class="post-title">说“首创精神” ——读《红船领航》有感</h2>
+          </a>
+      </h2>
+      <span class="post-meta">
+        <time class="post-time">
+          · 2020年04月16日 ·
+  </time>
+  
+    <a href="https://iaknew.github.io/tag/writing/" class="post-tag">
+      # 写作
+    </a>
+  
+      </span>
+      <a class="preview"href="https://iaknew.github.io/post/_y4tcozXc/">
+        <div class="post-abstract">
+          <p>这个学期开学后，老师发给我们一本《红船领航》。<br>
+这本书中的“红船精神”，是指“首创精神”、“奋斗精神”、“奉献精神”，是中国革命精神之源。这本书分成5章22个故事，其中，我最喜欢不怕丢“乌纱帽”的义乌县委书记谢高华的故事。</p>
 
+      </a>
+     
+      
+      <a class="btn btn-primary" href="https://iaknew.github.io/post/_y4tcozXc/">
+          Read More
+      </a>
+  </li>
+
+</div>
+    
 </ul>
 
-    </div>
+    
+        
 
+  
+  
 </div>
 </div>
-    		   
-		
-<footer id="footer" class="footer" style="height: 0px">
 
-            <div class="copyright">
-                <body>
+
+    
+
+</div>
+        <footer>
+            <div class="site-footer">
+              <body>
     <p>版权所有©2020 余文凯<br/>
     <p>Powered by Gridea<br/>
 </body>
 </html>
-                    <b id="hitokoto"></b><br>
-                    <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
-            <path
-                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
-                fill="#93b5cf"></path>
-        </svg>
-
-                    余文凯的博客 &copy;Copyright
-                        <script>
-                            var date = new Date();
-                            document.write("" + date.getFullYear());
-                        </script> <img src="https://i.loli.net/2020/03/31/kG71rUoEW5YQq4h.gif"  alt="dandan" />
-                        | 本站已经运行了
-                <strong><script type="text/javascript">		
-
-                var urodz= new Date("04/18/2020");
-                var now = new Date();
-                var ile = now.getTime() - urodz.getTime();
-                var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-                document.write(+dni)
-                </script>
-                </strong>天 | 🗞
-		<a class="rss" href="https://iaknew.github.io/atom.xml" target="_blank"><strong>RSS</strong></a>
             </div>
+  </div>
+</footer>
 
-<!-- commentTyping -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.2/assets/media/script/commentTyping.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://iaknew.github.io/media/js/common.js"></script>
 
-<!-- Click loveHeart -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xiangyi715/Gridea-Chic-Unique@1.0.3/assets/media/script/love.js"></script>
-        </footer>
-
-        
-
-                <script>
-			
-
-                    
-//                    hitokoto();
-                    hljs.initHighlighting();
-		    console.clear();
-                    console.log("\n %c \u26a1Theme:Chic-Unique Author's Blog:https://github.com/xiangyi715  Write By xiangyi  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
-</script>
-                
-
-    </div>
-
-<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-
-<script color="0,0,0" opacity="0.4" count="50" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
-</body>
+ 
+  </body>
 </html>
