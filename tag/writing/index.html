@@ -1,490 +1,422 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>余文凯的博客</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://iaknew.github.io/styles/main.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1423691_1fcfxbwa79n.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script >hljs.initHighlightingOnLoad();</script>
+  <head>
+    <meta charset="utf-8" >
 
-</head>
-<body class="home-template">
+<title>写作 | 余文凯的博客</title>
+<meta name="description" content="一位学生的个人思想">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- start: .mobile.main-nav -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://iaknew.github.io/favicon.ico?v=1599917573868">
+<!--字体-->
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Libre+Barcode+39" rel="stylesheet">
+<!--主要CSS-->
+<link rel="stylesheet" href="https://iaknew.github.io/styles/main.css">
+<style type="text/css">
+      .tilt{
+        margin: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background: #49beb7;
+        background: linear-gradient(to top left, #4CB8C4 -40%, #2196F3);
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 999 !important;
+      }
+      .container {
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 250px;
+        height: 250px;
+        margin: auto;
+      }
 
-        <nav class="mobile main-nav hide-on-desktop" role="navigation">
-        
-        <ul id="menu-header" class="menu">
-            
-		<li class="nav-features"><a href="https://iaknew.github.io">🏠 首页</a></li>
-		
-		<li class="nav-features"><a href="https://iaknew.github.io/post/about">😀 关于</a></li>
-		
-		<li class="nav-features"><a href="https://iaknew.github.io/post">📖 归档</a></li>
-		
-		<li class="nav-features"><a href="https://iaknew.github.io/tags">🔖 标签</a></li>
-		
-		<li class="nav-features"><a href="https://iaknew.github.io/post/somethink">💾 想法</a></li>
-		
-</ul>
+      .part {
+        width: 250px;
+        position: absolute;
+      }
 
-        <div class="social">
-                    
-                      	
-                <a href="https://iaknew.github.io/atom.xml" class="twitter"><i class="fa fa-rss"></i></a>
-                  
-                           
-                      
-                           
-                      	
-                <a href="https://github.com/iaknew" class="twitter"><i class="fa fa-github"></i></a>
-                  
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      	
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3498735386&amp;site=qq&amp;menu=yes" class="twitter"><i class="fa fa-qq"></i></a>
-                  
-                           
-                      	
-                <a href="https://weibo.com/yuxiaokai5618" class="twitter"><i class="fa fa-weibo"></i></a>
-                  
-                           
-                      
-                           
-        </div>
-        
-    </nav>
+      .svgpath {
+        fill: rgba(145,220,90,0);
+        stroke: aqua;
+        stroke-width: 1.5px;
+        stroke-dasharray: 1000;
+        stroke-linecap: round;
+        z-index: 2;
+      }
 
-    <!-- end: .mobile.main-nav -->
-    
-    <div class="menu-overlay hide-on-desktop"></div>
+      .svgbg {
+        fill: rgba(255,255,255,0.2);
+        z-index: 1;
+       }
 
-	<!-- start: #wrapper -->
-	<div id="wrapper">
+      #playload {
+        animation: dash 2.5s reverse ease-in-out infinite;
+      }
 
-		<!-- start: #header -->
-<header id="header" class="grid-20">
-
-	<div class="menu-mobile hide-on-desktop">
-		<i class="fa fa-bars"></i>
-	</div>
-
-	<!-- start: .menu-wrapper -->
-	<div class="menu-wrapper">
-		
-            <div class="logo"><a href="https://iaknew.github.io"><img src="https://iaknew.github.io/images/avatar.png?v=1599917447455" alt="余文凯的博客"></a></div>
-        
-        <!-- start: .main-nav -->
-        <nav class="main-nav hide-on-tablet hide-on-mobile" role="navigation">
-            
-            <ul id="menu-header" class="menu">
-                
-		<li class="nav-features"><a href="https://iaknew.github.io">🏠 首页</a></li>
-        
-		<li class="nav-features"><a href="https://iaknew.github.io/post/about">😀 关于</a></li>
-        
-		<li class="nav-features"><a href="https://iaknew.github.io/post">📖 归档</a></li>
-        
-		<li class="nav-features"><a href="https://iaknew.github.io/tags">🔖 标签</a></li>
-        
-		<li class="nav-features"><a href="https://iaknew.github.io/post/somethink">💾 想法</a></li>
-        
-</ul>
-
-            <div class="social">
-                    
-                      	
-                <a href="https://iaknew.github.io/atom.xml" class="twitter"><i class="fa fa-rss"></i></a>
-                  
-                           
-                      
-                           
-                      	
-                <a href="https://github.com/iaknew" class="twitter"><i class="fa fa-github"></i></a>
-                  
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      	
-                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3498735386&amp;site=qq&amp;menu=yes" class="twitter"><i class="fa fa-qq"></i></a>
-                  
-                           
-                      	
-                <a href="https://weibo.com/yuxiaokai5618" class="twitter"><i class="fa fa-weibo"></i></a>
-                  
-                           
-                      
-                           
-            </div>        
-        </nav>
-        <!-- end: .main-nav -->
-		
-	</div>
-	<!-- end: .menu-wrapper -->
-	
-	<div class="clear"></div>
-
-</header>
-<!-- end: #header -->
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 2000;
+        }
+      }</style>
 
 
-<main id="home" class="main tablet-grid-100 mobile-grid-100" role="main">	
-    
-    <div class="content-wrapper">
-            
-        <!-- start: .articles -->
-        <div class="articles">                  
-                      
-<article class="default grid-50  first-post post tag-travel">
 
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/m7fxB9gTe/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
 
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/m7fxB9gTe/">身残志不残</a></h3>
+<script src="https://iaknew.github.io/media/dict/js/Vue.js"></script>
+<script src="https://iaknew.github.io/media/dict/js/JQuery.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://iaknew.github.io/media/dict/css/aos.css" />
 
-                <time datetime="2018-08-06">2020年08月15日</time>
-                <div class="clear"></div>
-            </div>
 
-        </header>
 
-        <div class="excerpt">
-            <p>我最敬佩的人，就是身残志坚的克余伯伯。我一想起他，就会想起他拿着拐杖踽踽独行的身影……</p>
 
-            <div class="clear"></div>
-        </div>
 
-        <a href="https://iaknew.github.io/post/m7fxB9gTe/" class="button large">阅读更多</a>
+  </head>
+  <body>
+    <div class="tilt">
+      <div class='container'>
+        <svg class='part' x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+          <path class="svgpath" id="playload" d="M189.5,140.5c-6.6,29.1-32.6,50.9-63.7,50.9c-36.1,0-65.3-29.3-65.3-65.3
+        c0,0,17,0,23.5,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9c4.1,0,4.1,83,8.1,83
+        c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1c4.1,0,3.1-34.5,7.2-34.5
+        c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,13.1,0,13.1,0c0-34.4-27.9-62.3-62.3-62.3
+        c-27.4,0-50.7,17.7-59,42.3" />
 
+          <path class="svgbg" d="M61,126c0,0,16.4,0,23,0c10.4,0,6.6-45.9,11-46c5.2-0.1,3.6,94.8,7.4,94.8c4.1,0,4.1-92.9,8.2-92.9
+        c4.1,0,4.1,83,8.1,83c4.1,0,4.1-73.6,8.1-73.6c4.1,0,4.1,63.9,8.1,63.9c4.1,0,4.1-53.9,8.1-53.9c4.1,0,4.1,44.1,8.2,44.1
+        c4.1,0,3.1-34.5,7.2-34.5c4.1,0,3.1,24.6,7.2,24.6c4.1,0,2.5-14.5,5.2-14.5c2.2,0,0.8,5.1,4.2,4.9c0.4,0,22.5,0,23,0" />
+        </svg></div> 
     </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
+    <div id="app" class="main">
 
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/0_YOaCQOK/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
 
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/0_YOaCQOK/">独坐敬亭山</a></h3>
-
-                <time datetime="2018-08-06">2020年08月15日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            <blockquote>
-<p>众鸟高飞尽，孤云独去闲。相看两不厌，只有敬亭山。——【唐】李白《独坐敬亭山》</p>
-</blockquote>
-
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/0_YOaCQOK/" class="button large">阅读更多</a>
-
+  <div class="overlay"></div>
+  <div class="top-container" data-aos="fade-right">
+    <!--头像-->
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://iaknew.github.io">
+        <img src="https://iaknew.github.io/images/avatar.png?v=1599917573868" class="site-logo">
+      </a>
+      <h1 class="site-title">
+            余文凯的博客
+            <p></p>
+        </h1>
     </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
-
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/XHlbdt7XF/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
-
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/XHlbdt7XF/">未来的世界</a></h3>
-
-                <time datetime="2018-08-06">2020年08月15日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            <p>2197年，22世纪末期。人们的生活效率大大提升。这都要归功于未来世界的各种新发明。</p>
-
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/XHlbdt7XF/" class="button large">阅读更多</a>
-
-    </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
-
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/sqXHZTOu6/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  style="background: url(https://iaknew.github.io/post-images/sqXHZTOu6.png) no-repeat;"   ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
-
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/sqXHZTOu6/">读《发明家奇奇兔》有感</a></h3>
-
-                <time datetime="2018-08-06">2020年04月16日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/sqXHZTOu6/" class="button large">阅读更多</a>
-
-    </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
-
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/S-gmF2W3p/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
-
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/S-gmF2W3p/">考试前后</a></h3>
-
-                <time datetime="2018-08-06">2020年04月16日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            <p>马小虎，今年九岁，在XX市XX小学三年级三班读书。他一提起学习，就心里难受，但是他一玩起电脑，便玩得十分入迷。</p>
-
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/S-gmF2W3p/" class="button large">阅读更多</a>
-
-    </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
-
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/mxN7jFc49/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
-
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/mxN7jFc49/">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</a></h3>
-
-                <time datetime="2018-08-06">2020年04月16日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            <p>暑假里，我读了《王尔德童话》这本书。其中，《忠实的朋友》这一篇童话让我有了很大的感触。<br>
-它通过水老鼠、朱顶雀和鸭妈妈的对话讲述了年轻人小汉斯和磨坊主休之间的关于“友谊”的故事。休自称是汉斯的朋友，并不断以朋友的名义逼汉斯替他做各种苦活，还从汉斯手里无偿拿走自己需要的东西——当然也是以朋友的名义。小汉斯为了保持与休的“友情”，不断地满足修的无理要求，最终献上了自己宝贵的生命。</p>
-
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/mxN7jFc49/" class="button large">阅读更多</a>
-
-    </div>
-</article>
-          
-<article class="default grid-50  first-post post tag-travel">
-
-        <div class="featured-image">
-                      <a href="https://iaknew.github.io/post/_y4tcozXc/" class="thumb hover-effect">
-                        
-                <span class="full-image cover"  ></span>
-               
-                </a>   
-           
-            <div class="tags">
-                     <a href="https://iaknew.github.io/tag/writing/">写作</a>
-                </div>
-                
-        </div>
-    
-    <div class="info">
-
-        <header>
-            
-            <div class="meta">      
-                <h3 class="title ularge gradient-effect"><a href="https://iaknew.github.io/post/_y4tcozXc/">说“首创精神” ——读《红船领航》有感</a></h3>
-
-                <time datetime="2018-08-06">2020年04月16日</time>
-                <div class="clear"></div>
-            </div>
-
-        </header>
-
-        <div class="excerpt">
-            <p>这个学期开学后，老师发给我们一本《红船领航》。<br>
-这本书中的“红船精神”，是指“首创精神”、“奋斗精神”、“奉献精神”，是中国革命精神之源。这本书分成5章22个故事，其中，我最喜欢不怕丢“乌纱帽”的义乌县委书记谢高华的故事。</p>
-
-            <div class="clear"></div>
-        </div>
-
-        <a href="https://iaknew.github.io/post/_y4tcozXc/" class="button large">阅读更多</a>
-
-    </div>
-</article>
+    <!--导航-->
+    <div class="top-header-nav">
 
 
-
-
-
-
-
-
-
-            <div class="clear"></div>        
-        </div>
-        <!-- end: .articles -->
+      
         
-        <nav class="pagination" role="navigation">
-    <div class="nav">
+          <a href="https://iaknew.github.io" class="site-nav">
+            🏠 首页
+          </a>
         
+      
         
-            
-	</div>
-</nav>
-    
+          <a href="https://iaknew.github.io/post/about" class="site-nav">
+            😀 关于
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/post" class="site-nav">
+            📖 归档
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/tags" class="site-nav">
+            🔖 标签
+          </a>
+        
+      
+        
+          <a href="https://iaknew.github.io/post/somethink" class="site-nav">
+            💾 想法
+          </a>
+        
+      
     </div>
+    <div class="icons">
+        <ul>
+          <li v-for="(le,index) in alin.like">
+            <a :href="le.aim" :alt="le.alt">
+              <img :src="le.src" />
+            </a>
+          </li>
+        </ul>
+    </div> 
 
-</main>
+  </div>
 
-		<div class="clear"></div>
 
-<!-- start: #footer -->
-<footer id="footer" class="grid-80  np-mobile">
-
-	<div class="widgets section">		
-        
-        <div class="clear hide-on-desktop"></div>
-			
-		<div class="clear"></div>
-
-        <p class="published"><body>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+      <div class="site-footer">
+          <body>
     <p>版权所有©2020 余文凯<br/>
     <p>Powered by Gridea<br/>
 </body>
-</html></p>
-		
-	</div>
+</html>
+      </div>
+      <div class="site-description">
+          <p><a href="#">一位学生的个人思想</a></p>
+          <p>
+            
+            <span>&nbsp;</span>
+            Powered by <a href="https://gridea.dev">Gridea</a>
+            <span>•</span>Theme <a href="http://www.itaolaity.com/">Alin</a>
+          </p>
+      </div>
+  </div>
+</div>
 
-	<a href="javascript:void(0)" id="back-to-top" class="button dark"><i class="fa fa-chevron-up"></i></a>
-	
-</footer>
-<!-- end: #footer -->
-		<div class="clear"></div>
 
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: 写作</h2>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
 
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/m7fxB9gTe/">
+                  <h2 class="post-title">身残志不残</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年08月15日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/0_YOaCQOK/">
+                  <h2 class="post-title">独坐敬亭山</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年08月15日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/XHlbdt7XF/">
+                  <h2 class="post-title">未来的世界</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年08月15日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+                <div class="art-bg">
+                  <div class="feature-container" style="background-image: url('https://iaknew.github.io/post-images/sqXHZTOu6.png')"></div>
+                </div>
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/sqXHZTOu6/">
+                  <h2 class="post-title">读《发明家奇奇兔》有感</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年04月16日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/S-gmF2W3p/">
+                  <h2 class="post-title">考试前后</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年04月16日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/mxN7jFc49/">
+                  <h2 class="post-title">真正的友谊——读《王尔德童话》之《忠实的朋友》有感</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年04月16日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+            <!-- Note -->
+            <article class="post-item">
+              <!-- 是否包含图片 -->
+              
+
+              <div class="post-con">
+                <!-- 标题 -->
+                <a href="https://iaknew.github.io/post/_y4tcozXc/">
+                  <h2 class="post-title">说“首创精神” ——读《红船领航》有感</h2>
+                </a>
+                <!-- 时间与标注 -->
+                <div class="post-info">
+                  2020年04月16日
+                  <span>•</span>
+                  写作
+                </div>
+              </div>
+              
+
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
     </div>
-    <!-- end: #wrapper -->
 
-    
+    <footer>
+	<div class="foo-con">
+    	<p><a href="#">一位学生的个人思想</a></p>
+      	<p>
+	        
+	        <span>&nbsp;</span>
+	        Powered by <a href="https://gridea.dev">Gridea</a>
+	        <span>•</span>Theme <a href="http://www.itaolaity.com/">Alin</a>
+     	</p>
+    </div>
+</footer>
 
-    <script type="text/javascript" src="https://iaknew.github.io/media/scripts/scripts.min.js" defer></script>
 
-</body>
+
+<script src="https://iaknew.github.io/media/dict/js/aos.js"></script>
+
+<!--Self-->
+<script>
+    $(window).on('load',function(){ 
+  　　$('.tilt').fadeOut(1000);
+　　}); 
+</script>
+
+
+<script type="application/javascript">
+
+/*动画初始化*/
+AOS.init(
+  {
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-sine',
+  delay: 100,
+  }
+);
+
+/*代码高亮*/
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible:false,
+    alin:{
+      like:[
+          {
+            "alt":"我的博客",
+            "aim":"http://www.itaolaity.com/index.php",
+            "src":"http://itaolaity.com/20190429220545.png"
+          },
+          {
+            "alt":"GitHub",
+            "aim":"https://github.com/taoya7",
+            "src":"http://itaolaity.com/20190429220612.png"
+          },
+          {
+            "alt":"Email",
+            "aim":"mailto:569781231@qq.com",
+            "src":"http://itaolaity.com/20190429220636.png"
+          }
+      ]
+    }
+  }
+});
+
+</script>
+
+
+
+
+
+
+  </body>
 </html>
