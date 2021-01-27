@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://iaknew.github.io</id>
     <title>余文凯的博客</title>
-    <updated>2020-09-12T13:36:11.902Z</updated>
+    <updated>2021-01-27T12:00:50.451Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://iaknew.github.io"/>
     <link rel="self" href="https://iaknew.github.io/atom.xml"/>
     <subtitle>一位学生的个人思想</subtitle>
     <logo>https://iaknew.github.io/images/avatar.png</logo>
     <icon>https://iaknew.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 余文凯的博客</rights>
+    <rights>All rights reserved 2021, 余文凯的博客</rights>
     <entry>
         <title type="html"><![CDATA[身残志不残]]></title>
         <id>https://iaknew.github.io/post/m7fxB9gTe/</id>
